@@ -14,7 +14,7 @@
     ]
   },
   {
-    "title": "Introduction \u2014 Self-check quiz",
+    "title": "Unit 1 Introduction One-Dimensional Two-Dimensional Kinematics \u2014 Self-check quiz",
     "course": "Physics I",
     "type": "quiz",
     "url": "courses/course-1-physics/index.html#unit-1",
@@ -22,42 +22,12 @@
       "quiz",
       "practice",
       "self-check",
+      "unit",
+      "1",
       "introduction",
-      "\u2014",
-      "self-check",
-      "quiz"
-    ]
-  },
-  {
-    "title": "One-Dimensional Kinematics \u2014 Self-check quiz",
-    "course": "Physics I",
-    "type": "quiz",
-    "url": "courses/course-1-physics/index.html#unit-1",
-    "tags": [
-      "quiz",
-      "practice",
-      "self-check",
       "one-dimensional",
-      "kinematics",
-      "\u2014",
-      "self-check",
-      "quiz"
-    ]
-  },
-  {
-    "title": "Two-Dimensional Kinematics \u2014 Self-check quiz",
-    "course": "Physics I",
-    "type": "quiz",
-    "url": "courses/course-1-physics/index.html#unit-1",
-    "tags": [
-      "quiz",
-      "practice",
-      "self-check",
       "two-dimensional",
-      "kinematics",
-      "\u2014",
-      "self-check",
-      "quiz"
+      "kinematics"
     ]
   },
   {
@@ -78,7 +48,7 @@
     ]
   },
   {
-    "title": "Newton's Laws of Motion \u2014 Self-check quiz",
+    "title": "Unit 2 Forces Newtons Laws Statics Torques Work Energy \u2014 Self-check quiz",
     "course": "Physics I",
     "type": "quiz",
     "url": "courses/course-1-physics/index.html#unit-2",
@@ -86,65 +56,15 @@
       "quiz",
       "practice",
       "self-check",
-      "newton's",
+      "unit",
+      "2",
+      "forces",
+      "newtons",
       "laws",
-      "of",
-      "motion",
-      "\u2014",
-      "self-check",
-      "quiz"
-    ]
-  },
-  {
-    "title": "Friction, Drag &amp; Elasticity \u2014 Self-check quiz",
-    "course": "Physics I",
-    "type": "quiz",
-    "url": "courses/course-1-physics/index.html#unit-2",
-    "tags": [
-      "quiz",
-      "practice",
-      "self-check",
-      "friction,",
-      "drag",
-      "&amp;",
-      "elasticity",
-      "\u2014",
-      "self-check",
-      "quiz"
-    ]
-  },
-  {
-    "title": "Statics &amp; Torque \u2014 Self-check quiz",
-    "course": "Physics I",
-    "type": "quiz",
-    "url": "courses/course-1-physics/index.html#unit-2",
-    "tags": [
-      "quiz",
-      "practice",
-      "self-check",
       "statics",
-      "&amp;",
-      "torque",
-      "\u2014",
-      "self-check",
-      "quiz"
-    ]
-  },
-  {
-    "title": "Work &amp; Energy \u2014 Self-check quiz",
-    "course": "Physics I",
-    "type": "quiz",
-    "url": "courses/course-1-physics/index.html#unit-2",
-    "tags": [
-      "quiz",
-      "practice",
-      "self-check",
+      "torques",
       "work",
-      "&amp;",
-      "energy",
-      "\u2014",
-      "self-check",
-      "quiz"
+      "energy"
     ]
   },
   {
@@ -162,7 +82,7 @@
     ]
   },
   {
-    "title": "Linear Momentum, Impulse &amp; Collisions \u2014 Self-check quiz",
+    "title": "Unit 3 Momentum Circular Rotational Motion \u2014 Self-check quiz",
     "course": "Physics I",
     "type": "quiz",
     "url": "courses/course-1-physics/index.html#unit-3",
@@ -170,71 +90,12 @@
       "quiz",
       "practice",
       "self-check",
-      "linear",
-      "momentum,",
-      "impulse",
-      "&amp;",
-      "collisions",
-      "\u2014",
-      "self-check",
-      "quiz"
-    ]
-  },
-  {
-    "title": "Uniform Circular Motion \u2014 Self-check quiz",
-    "course": "Physics I",
-    "type": "quiz",
-    "url": "courses/course-1-physics/index.html#unit-3",
-    "tags": [
-      "quiz",
-      "practice",
-      "self-check",
-      "uniform",
-      "circular",
-      "motion",
-      "\u2014",
-      "self-check",
-      "quiz"
-    ]
-  },
-  {
-    "title": "Rotational Kinematics &amp; Rolling Motion \u2014 Self-check quiz",
-    "course": "Physics I",
-    "type": "quiz",
-    "url": "courses/course-1-physics/index.html#unit-3",
-    "tags": [
-      "quiz",
-      "practice",
-      "self-check",
-      "rotational",
-      "kinematics",
-      "&amp;",
-      "rolling",
-      "motion",
-      "\u2014",
-      "self-check",
-      "quiz"
-    ]
-  },
-  {
-    "title": "Torque, Moment of Inertia &amp; Angular Momentum \u2014 Self-check quiz",
-    "course": "Physics I",
-    "type": "quiz",
-    "url": "courses/course-1-physics/index.html#unit-3",
-    "tags": [
-      "quiz",
-      "practice",
-      "self-check",
-      "torque,",
-      "moment",
-      "of",
-      "inertia",
-      "&amp;",
-      "angular",
+      "unit",
+      "3",
       "momentum",
-      "\u2014",
-      "self-check",
-      "quiz"
+      "circular",
+      "rotational",
+      "motion"
     ]
   },
   {
@@ -251,7 +112,7 @@
     ]
   },
   {
-    "title": "Fluid Statics \u2014 Self-check quiz",
+    "title": "Unit 4 Fluids Oscillations Hearing \u2014 Self-check quiz",
     "course": "Physics I",
     "type": "quiz",
     "url": "courses/course-1-physics/index.html#unit-4",
@@ -259,60 +120,11 @@
       "quiz",
       "practice",
       "self-check",
-      "fluid",
-      "statics",
-      "\u2014",
-      "self-check",
-      "quiz"
-    ]
-  },
-  {
-    "title": "Fluid Dynamics \u2014 Self-check quiz",
-    "course": "Physics I",
-    "type": "quiz",
-    "url": "courses/course-1-physics/index.html#unit-4",
-    "tags": [
-      "quiz",
-      "practice",
-      "self-check",
-      "fluid",
-      "dynamics",
-      "\u2014",
-      "self-check",
-      "quiz"
-    ]
-  },
-  {
-    "title": "Oscillatory Motion \u2014 Self-check quiz",
-    "course": "Physics I",
-    "type": "quiz",
-    "url": "courses/course-1-physics/index.html#unit-4",
-    "tags": [
-      "quiz",
-      "practice",
-      "self-check",
-      "oscillatory",
-      "motion",
-      "\u2014",
-      "self-check",
-      "quiz"
-    ]
-  },
-  {
-    "title": "Waves &amp; Sound \u2014 Self-check quiz",
-    "course": "Physics I",
-    "type": "quiz",
-    "url": "courses/course-1-physics/index.html#unit-4",
-    "tags": [
-      "quiz",
-      "practice",
-      "self-check",
-      "waves",
-      "&amp;",
-      "sound",
-      "\u2014",
-      "self-check",
-      "quiz"
+      "unit",
+      "4",
+      "fluids",
+      "oscillations",
+      "hearing"
     ]
   },
   {
@@ -603,40 +415,246 @@
     ]
   },
   {
-    "title": "Unit 1",
+    "title": "Unit 1 Angles Radians Right Triangle Trigonometry Unit Circle",
     "course": "Trigonometry",
     "type": "unit",
     "url": "courses/trig-1210/index.html#unit-1",
     "tags": [
       "unit",
-      "1"
+      "1",
+      "angles",
+      "radians",
+      "right",
+      "triangle",
+      "trigonometry",
+      "unit",
+      "circle"
     ]
   },
   {
-    "title": "Unit 2",
+    "title": "Unit 1 Angles Radians Right Triangle Trigonometry Unit Circle \u2014 Self-check quiz",
+    "course": "Trigonometry",
+    "type": "quiz",
+    "url": "courses/trig-1210/index.html#unit-1",
+    "tags": [
+      "quiz",
+      "practice",
+      "self-check",
+      "unit",
+      "1",
+      "angles",
+      "radians",
+      "right",
+      "triangle",
+      "trigonometry",
+      "unit",
+      "circle"
+    ]
+  },
+  {
+    "title": "Unit 2 Graphing Sine Cosine Tangent Cotangent Secant Cosecant Inverse Trig Functions",
     "course": "Trigonometry",
     "type": "unit",
     "url": "courses/trig-1210/index.html#unit-2",
     "tags": [
       "unit",
-      "2"
+      "2",
+      "graphing",
+      "sine",
+      "cosine",
+      "tangent",
+      "cotangent",
+      "secant",
+      "cosecant",
+      "inverse",
+      "trig",
+      "functions"
     ]
   },
   {
-    "title": "Unit 1 Materials (add this file)",
+    "title": "Unit 2 Graphing Sine Cosine Tangent Cotangent Secant Cosecant Inverse Trig Functions \u2014 Self-check quiz",
+    "course": "Trigonometry",
+    "type": "quiz",
+    "url": "courses/trig-1210/index.html#unit-2",
+    "tags": [
+      "quiz",
+      "practice",
+      "self-check",
+      "unit",
+      "2",
+      "graphing",
+      "sine",
+      "cosine",
+      "tangent",
+      "cotangent",
+      "secant",
+      "cosecant",
+      "inverse",
+      "trig",
+      "functions"
+    ]
+  },
+  {
+    "title": "Unit 3 Trigonometric Identities Equations Sum Difference Double Half Angle",
+    "course": "Trigonometry",
+    "type": "unit",
+    "url": "courses/trig-1210/index.html#unit-3",
+    "tags": [
+      "unit",
+      "3",
+      "trigonometric",
+      "identities",
+      "equations",
+      "sum",
+      "difference",
+      "double",
+      "half",
+      "angle"
+    ]
+  },
+  {
+    "title": "Unit 3 Trigonometric Identities Equations Sum Difference Double Half Angle \u2014 Self-check quiz",
+    "course": "Trigonometry",
+    "type": "quiz",
+    "url": "courses/trig-1210/index.html#unit-3",
+    "tags": [
+      "quiz",
+      "practice",
+      "self-check",
+      "unit",
+      "3",
+      "trigonometric",
+      "identities",
+      "equations",
+      "sum",
+      "difference",
+      "double",
+      "half",
+      "angle"
+    ]
+  },
+  {
+    "title": "Unit 4 Law of Sines Law of Cosines Vectors Oblique Triangles",
+    "course": "Trigonometry",
+    "type": "unit",
+    "url": "courses/trig-1210/index.html#unit-4",
+    "tags": [
+      "unit",
+      "4",
+      "law",
+      "of",
+      "sines",
+      "law",
+      "of",
+      "cosines",
+      "vectors",
+      "oblique",
+      "triangles"
+    ]
+  },
+  {
+    "title": "Unit 4 Law of Sines Law of Cosines Vectors Oblique Triangles \u2014 Self-check quiz",
+    "course": "Trigonometry",
+    "type": "quiz",
+    "url": "courses/trig-1210/index.html#unit-4",
+    "tags": [
+      "quiz",
+      "practice",
+      "self-check",
+      "unit",
+      "4",
+      "law",
+      "of",
+      "sines",
+      "law",
+      "of",
+      "cosines",
+      "vectors",
+      "oblique",
+      "triangles"
+    ]
+  },
+  {
+    "title": "Unit 1 Online Homework (MyOpenMath)",
     "course": "Trigonometry",
     "type": "file",
-    "url": "courses/trig-1210/files/unit1-materials.pdf",
+    "url": "https://www.myopenmath.com/course/course.php?folder=0&amp;cid=338462",
     "tags": [
       "download",
       "file",
       "pdf",
       "unit",
       "1",
-      "materials",
-      "(add",
-      "this",
-      "file)"
+      "online",
+      "homework",
+      "(myopenmath)"
+    ]
+  },
+  {
+    "title": "Degrees-Minutes-Seconds (DMS) Conversion Practice (PDF, with answer key)",
+    "course": "Trigonometry",
+    "type": "file",
+    "url": "courses/trig-1210/files/unit1-dms-conversion-practice.pdf",
+    "tags": [
+      "download",
+      "file",
+      "pdf",
+      "degrees-minutes-seconds",
+      "(dms)",
+      "conversion",
+      "practice",
+      "(pdf,",
+      "with",
+      "answer",
+      "key)"
+    ]
+  },
+  {
+    "title": "Unit 2 Online Homework (MyOpenMath)",
+    "course": "Trigonometry",
+    "type": "file",
+    "url": "https://www.myopenmath.com/course/course.php?folder=0&amp;cid=338462",
+    "tags": [
+      "download",
+      "file",
+      "pdf",
+      "unit",
+      "2",
+      "online",
+      "homework",
+      "(myopenmath)"
+    ]
+  },
+  {
+    "title": "Unit 3 Online Homework (MyOpenMath)",
+    "course": "Trigonometry",
+    "type": "file",
+    "url": "https://www.myopenmath.com/course/course.php?folder=0&amp;cid=338462",
+    "tags": [
+      "download",
+      "file",
+      "pdf",
+      "unit",
+      "3",
+      "online",
+      "homework",
+      "(myopenmath)"
+    ]
+  },
+  {
+    "title": "Unit 4 Online Homework (MyOpenMath)",
+    "course": "Trigonometry",
+    "type": "file",
+    "url": "https://www.myopenmath.com/course/course.php?folder=0&amp;cid=338462",
+    "tags": [
+      "download",
+      "file",
+      "pdf",
+      "unit",
+      "4",
+      "online",
+      "homework",
+      "(myopenmath)"
     ]
   }
 ]
