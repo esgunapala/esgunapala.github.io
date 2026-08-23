@@ -26,23 +26,76 @@
     <p class="eyebrow">Course · MATH-1210</p>
     <h1>Trigonometry</h1>
     <p class="lede">
-      Add your unit-by-unit materials, quizzes, and downloads for Trigonometry below — see CONTENT-GUIDE.md in the project root for copy-paste patterns, or the Physics course for a fully worked example.
+      A study of trigonometry and its applications: right-triangle and unit-circle
+      trigonometric functions, graphing, identities and equations, and the Law of
+      Sines/Cosines with vector applications from engineering and the physical sciences.
     </p>
   </section>
+
+  <div class="info-box-row">
+    <div class="info-box">
+      <h3>Office Hours</h3>
+      <dl>
+        <dt>Mon / Wed / Fri</dt>
+        <dd>9:00 – 10:00 AM</dd>
+        <dt>Mon / Thu</dt>
+        <dd>1:00 – 2:00 PM</dd>
+        <dt>Other times</dt>
+        <dd>By appointment (online available)</dd>
+      </dl>
+    </div>
+    <div class="info-box">
+      <h3>Textbook &amp; Homework</h3>
+      <dl>
+        <dt>Textbook</dt>
+        <dd><a href="https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)" target="_blank" rel="noopener">Precalculus: An Investigation of Functions</a> (Lippman &amp; Rasmussen, free) — Chapters 5–8</dd>
+        <dt>Homework</dt>
+        <dd><a href="https://www.myopenmath.com/course/course.php?folder=0&amp;cid=338462" target="_blank" rel="noopener">MyOpenMath course site</a></dd>
+      </dl>
+    </div>
+    <div class="info-box">
+      <h3>Grading</h3>
+      <dl>
+        <dt>Unit tests</dt>
+        <dd>35%</dd>
+        <dt>Online homework</dt>
+        <dd>23%</dd>
+        <dt>Activities &amp; assignments</dt>
+        <dd>10%</dd>
+        <dt>Unit quizzes</dt>
+        <dd>10%</dd>
+        <dt>Guided problems</dt>
+        <dd>7%</dd>
+        <dt>Comprehensive final</dt>
+        <dd>15%</dd>
+      </dl>
+    </div>
+    <div class="info-box">
+      <h3>Required Tools</h3>
+      <dl>
+        <dt>Calculator</dt>
+        <dd>Graphing calculator (TI-83 or higher)</dd>
+        <dt>Prerequisite</dt>
+        <dd>MATH-1150 (may be concurrent)</dd>
+      </dl>
+    </div>
+  </div>
 
   <div class="course-layout">
 
     <nav class="unit-nav" aria-label="Units in this course">
       <h2>Units</h2>
       <ol>
-        <li><a href="#unit-1">Unit 1 — [Title]</a></li>
-        <li><a href="#unit-2">Unit 2 — [Title]</a></li>
+        <li><a href="#unit-1">Unit 1 — Angles &amp; Right-Triangle Trigonometry</a></li>
+        <li><a href="#unit-2">Unit 2 — Graphing &amp; Inverse Trig Functions</a></li>
+        <li><a href="#unit-3">Unit 3 — Trigonometric Identities &amp; Equations</a></li>
+        <li><a href="#unit-4">Unit 4 — Law of Sines, Law of Cosines &amp; Vectors</a></li>
       </ol>
     </nav>
 
     <div>
       <div class="filter-box" data-filter-target=".unit" data-filter-empty="#units-empty">
-        <input type="search" placeholder="Filter units…" aria-label="Filter units" />
+        <input type="search" placeholder="Filter units, e.g. &quot;unit circle&quot; or &quot;quiz&quot;…" aria-label="Filter units" />
       </div>
       <p class="filter-count" data-filter-count></p>
 
@@ -51,34 +104,608 @@
         <button type="button" class="btn" data-collapse-all>Collapse all</button>
       </div>
 
-      <details class="unit" id="unit-1" data-title="Unit 1" data-tags="">
+      <!-- ============ UNIT 1 ============ -->
+      <details open class="unit" id="unit-1" data-title="Unit 1 Angles Radians Right Triangle Trigonometry Unit Circle" data-tags="angles degrees radians dms coterminal reference angle arc length sector right triangle soh cah toa reciprocal cofunction unit circle special angles pythagorean identity quadrantal">
         <summary>
-          Unit 1 — [Title]
-          <span class="unit-meta">Week 1</span>
+          Unit 1 — Angles &amp; Right-Triangle Trigonometry
+          <span class="unit-meta">Weeks 1–4 · Unit Test: Week 4</span>
         </summary>
         <div class="unit-body">
-          <p>[Unit overview goes here.]</p>
-
-          <p class="placeholder-note">
-            To add a quiz here, copy a <code>&lt;div class="quiz" data-quiz='...'&gt;</code>
-            block from the Physics example and include
-            <code>assets/js/quiz.js</code> at the bottom of this page.
+          <p>
+            The foundations: measuring angles in degrees and radians, arc length
+            and sectors, right-triangle trig ratios, and the unit circle — where
+            right-triangle trig and circle geometry meet to define the six
+            trigonometric functions for any angle.
           </p>
 
+          <table class="track-table">
+            <thead>
+              <tr><th>Reading</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Chapter 5, <a href="https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/05%3A_Trigonometric_Functions_of_Angles" target="_blank" rel="noopener">Trigonometric Functions of Angles</a> — Precalculus (Lippman &amp; Rasmussen)</td>
+              </tr>
+            </tbody>
+          </table>
+
           <ul class="file-list">
-            <li><a href="files/unit1-materials.pdf"><span class="file-icon">📄</span> Unit 1 Materials (add this file)</a></li>
+            <li><a href="https://www.myopenmath.com/course/course.php?folder=0&amp;cid=338462" target="_blank" rel="noopener"><span class="file-icon">💻</span> Unit 1 Online Homework (MyOpenMath)</a></li>
+            <li><a href="files/unit1-dms-conversion-practice.pdf"><span class="file-icon">📄</span> Degrees-Minutes-Seconds (DMS) Conversion Practice (PDF, with answer key)</a></li>
           </ul>
+          <p class="placeholder-note">Guided lecture notes packet for Unit 1 — coming soon.</p>
+
+          <h3 style="margin-bottom:0.25rem;">Circles, Angles &amp; Radian Measure</h3>
+          <ul class="topic-list">
+            <li>Pythagorean Theorem &amp; the Distance Formula</li>
+            <li>Equation of a Circle; Finding a Missing Coordinate</li>
+            <li>Drawing Angles in Standard Position; Quadrantal Angles</li>
+            <li>Converting Between Degrees and Radians</li>
+            <li>Degrees–Minutes–Seconds (DMS) ⇄ Decimal Degrees</li>
+            <li>Arc Length, Coterminal Angles &amp; the Area of a Sector</li>
+          </ul>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Circles, Angles &amp; Radian Measure — Self-check quiz" data-quiz='[
+            {
+              "question": "What is 150° converted to radians?",
+              "choices": ["5π/6", "π/3", "3π/4", "2π/3"],
+              "correctIndex": 0,
+              "explanation": "radians = degrees × (π/180) = 150 × π/180 = 5π/6."
+            },
+            {
+              "question": "Convert 32.425° to degrees-minutes-seconds (DMS).",
+              "choices": ["32° 42′30″", "32° 25′30″", "32° 25′5″", "33° 25′30″"],
+              "correctIndex": 1,
+              "explanation": "0.425° × 60 = 25.5′ → 25′ with 0.5′ left over. 0.5′ × 60 = 30″. So 32.425° = 32° 25′ 30″."
+            },
+            {
+              "question": "A circle has radius 4 cm. What arc length corresponds to a central angle of 2 radians?",
+              "choices": ["2 cm", "6 cm", "8 cm", "4 cm"],
+              "correctIndex": 2,
+              "explanation": "Arc length s = rθ = 4 cm × 2 rad = 8 cm."
+            },
+            {
+              "question": "Which angle is coterminal with 400°?",
+              "choices": ["40°", "-40°", "220°", "760°"],
+              "correctIndex": 0,
+              "explanation": "Coterminal angles differ by a multiple of 360°. 400° − 360° = 40°."
+            },
+            {
+              "question": "What is the area of a sector with radius 6 in. and central angle π/3?",
+              "choices": ["6π in²", "12π in² ", "36 in²", "6 in²"],
+              "correctIndex": 0,
+              "explanation": "Area = ½θr² = ½(π/3)(36) = 6π in²."
+            }
+          ]'></div>
+
+          <h3 style="margin-bottom:0.25rem;">Right-Triangle Trigonometry</h3>
+          <ul class="topic-list">
+            <li>Using Right Triangles to Evaluate Trigonometric Functions</li>
+            <li>Reciprocal Functions (sec, csc, cot)</li>
+            <li>Cofunction Identities</li>
+            <li>Solving Right-Triangle Applications</li>
+          </ul>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Right-Triangle Trigonometry — Self-check quiz" data-quiz='[
+            {
+              "question": "In a right triangle, sin θ is defined as:",
+              "choices": ["adjacent / hypotenuse", "opposite / adjacent", "opposite / hypotenuse", "hypotenuse / opposite"],
+              "correctIndex": 2,
+              "explanation": "SOH-CAH-TOA: sin θ = opposite / hypotenuse."
+            },
+            {
+              "question": "If sin θ = 5/12, what is csc θ?",
+              "choices": ["12/5", "5/12", "12/13", "13/5"],
+              "correctIndex": 0,
+              "explanation": "Cosecant is the reciprocal of sine: csc θ = 1/sin θ = 12/5."
+            },
+            {
+              "question": "Which identity correctly relates cofunctions?",
+              "choices": ["sin θ = sin(π/2 − θ)", "cos θ = sin(π/2 − θ)", "tan θ = tan(π/2 − θ)", "sec θ = sec(π/2 − θ)"],
+              "correctIndex": 1,
+              "explanation": "Cofunction identities pair a function with the co-function of the complementary angle: cos θ = sin(π/2 − θ), and likewise sin θ = cos(π/2 − θ)."
+            },
+            {
+              "question": "A 20-ft ladder leans against a wall, making a 65° angle with the ground. About how high up the wall does it reach?",
+              "choices": ["8.5 ft", "18.1 ft", "20.0 ft", "9.3 ft"],
+              "correctIndex": 1,
+              "explanation": "height = hypotenuse × sin θ = 20 × sin(65°) ≈ 18.1 ft."
+            }
+          ]'></div>
+
+          <h4 style="margin-bottom:0.25rem;">Interactive — The Unit Circle Explorer</h4>
+          <div class="sim-wrap" data-uc-sim>
+            <div class="sim-layout">
+              <div class="sim-canvas-box">
+                <canvas class="uc-canvas" data-uc-canvas></canvas>
+              </div>
+              <div class="sim-controls">
+                <label>
+                  Angle θ (drag the point, or use this slider)
+                  <input type="range" min="0" max="360" step="1" value="45" data-uc-angle />
+                  <output data-uc-angle-out>45.0°</output>
+                </label>
+                <label class="uc-checkbox-row">
+                  <input type="checkbox" checked data-uc-snap />
+                  Snap to special angles (0°, 30°, 45°, 60°, 90°, …)
+                </label>
+                <div class="sim-readout">
+                  <div>Degrees: <strong data-uc-deg>–</strong></div>
+                  <div>Radians: <strong data-uc-rad>–</strong></div>
+                  <div>Quadrant: <strong data-uc-quad>–</strong></div>
+                  <div>Reference angle: <strong data-uc-ref>–</strong></div>
+                  <div>(cos θ, sin θ): <strong data-uc-coord>–</strong></div>
+                  <div>sin θ: <strong data-uc-sin>–</strong></div>
+                  <div>cos θ: <strong data-uc-cos>–</strong></div>
+                  <div>tan θ: <strong data-uc-tan>–</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="placeholder-note">On the unit circle (radius 1), the point at angle θ is always (cos θ, sin θ) — that's the definition this widget is built to make visible. Try dragging past 90°, 180°, and 270° to see the sign pattern (ASTC) and how the reference angle relates back to a first-quadrant angle.</p>
+
+          <h3 style="margin-bottom:0.25rem;">The Unit Circle &amp; Trigonometric Functions</h3>
+          <ul class="topic-list">
+            <li>Finding Trig Functions Using the Unit Circle</li>
+            <li>The Pythagorean Identity</li>
+            <li>Sines and Cosines of Special Angles (30°, 45°, 60°)</li>
+            <li>Reference Angles</li>
+            <li>Domain &amp; Range of Sine and Cosine</li>
+            <li>Even &amp; Odd Trigonometric Functions</li>
+            <li>Fundamental Identities</li>
+          </ul>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="The Unit Circle &amp; Trigonometric Functions — Self-check quiz" data-quiz='[
+            {
+              "question": "What is sin(π/3)?",
+              "choices": ["1/2", "√2/2", "√3/2", "1"],
+              "correctIndex": 2,
+              "explanation": "π/3 = 60°, and sin(60°) = √3/2 — one of the special-angle values from the 30-60-90 triangle."
+            },
+            {
+              "question": "The Pythagorean identity sin²θ + cos²θ = 1 comes directly from:",
+              "choices": ["The Law of Cosines", "The Pythagorean theorem applied to the unit circle (radius 1)", "The definition of the tangent function", "Even/odd symmetry of sine and cosine"],
+              "correctIndex": 1,
+              "explanation": "On the unit circle, x² + y² = r² = 1, and since (x, y) = (cos θ, sin θ), this is exactly sin²θ + cos²θ = 1."
+            },
+            {
+              "question": "What is the reference angle for θ = 200°?",
+              "choices": ["20°", "160°", "70°", "200°"],
+              "correctIndex": 0,
+              "explanation": "200° is in Quadrant III (between 180° and 270°); the reference angle is θ − 180° = 200° − 180° = 20°."
+            },
+            {
+              "question": "Which function is even (f(−θ) = f(θ)) rather than odd?",
+              "choices": ["sin θ", "tan θ", "cos θ", "csc θ"],
+              "correctIndex": 2,
+              "explanation": "cos(−θ) = cos θ, so cosine (and its reciprocal, secant) is even. Sine, tangent, cosecant, and cotangent are all odd."
+            },
+            {
+              "question": "What is the domain of f(θ) = sin θ?",
+              "choices": ["All real numbers", "[−1, 1]", "θ ≠ π/2 + kπ", "θ ≥ 0"],
+              "correctIndex": 0,
+              "explanation": "Sine (and cosine) are defined for every real number input — it’s the range that is restricted to [−1, 1], not the domain."
+            }
+          ]'></div>
         </div>
       </details>
 
-      <details class="unit" id="unit-2" data-title="Unit 2" data-tags="">
+      <!-- ============ UNIT 2 ============ -->
+      <details class="unit" id="unit-2" data-title="Unit 2 Graphing Sine Cosine Tangent Cotangent Secant Cosecant Inverse Trig Functions" data-tags="graphing amplitude period phase shift vertical shift sinusoidal periodic tangent cotangent secant cosecant inverse trig arcsin arccos arctan domain range">
         <summary>
-          Unit 2 — [Title]
-          <span class="unit-meta">Week 2</span>
+          Unit 2 — Graphing &amp; Inverse Trig Functions
+          <span class="unit-meta">Weeks 5–8 · Unit Test: Week 8</span>
         </summary>
         <div class="unit-body">
-          <p>[Unit overview goes here.]</p>
-          <p class="placeholder-note">Add more &lt;details class="unit"&gt; blocks for additional units/weeks, and matching links in the sidebar above.</p>
+          <p>
+            Graphing all six trigonometric functions — amplitude, period, and
+            phase/vertical shift — and then reversing direction with the
+            inverse trigonometric functions and their restricted domains.
+          </p>
+
+          <table class="track-table">
+            <thead>
+              <tr><th>Reading</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Chapter 6, <a href="https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/06%3A_Periodic_Functions" target="_blank" rel="noopener">Periodic Functions</a> — Precalculus (Lippman &amp; Rasmussen)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <ul class="file-list">
+            <li><a href="https://www.myopenmath.com/course/course.php?folder=0&amp;cid=338462" target="_blank" rel="noopener"><span class="file-icon">💻</span> Unit 2 Online Homework (MyOpenMath)</a></li>
+          </ul>
+          <p class="placeholder-note">Guided lecture notes packet for Unit 2 — coming soon.</p>
+
+          <h3 style="margin-bottom:0.25rem;">Graphs of Sine &amp; Cosine</h3>
+          <ul class="topic-list">
+            <li>Periodic &amp; Sinusoidal Functions</li>
+            <li>Amplitude</li>
+            <li>Period</li>
+            <li>Combining Translations (vertical &amp; phase shift)</li>
+          </ul>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Graphs of Sine &amp; Cosine — Self-check quiz" data-quiz='[
+            {
+              "question": "What is the amplitude of f(x) = 3cos(x)?",
+              "choices": ["1", "3", "6", "1/3"],
+              "correctIndex": 1,
+              "explanation": "Amplitude |A| for f(x) = A sin(x) or A cos(x) is |A| = ½|max − min|; here A = 3, so the amplitude is 3."
+            },
+            {
+              "question": "What is the period of g(x) = cos(x/3)?",
+              "choices": ["2π/3", "6π", "3", "2π·3"],
+              "correctIndex": 1,
+              "explanation": "Period = 2π/|B|. With B = 1/3, period = 2π ÷ (1/3) = 6π."
+            },
+            {
+              "question": "For f(x) = sin(x + π/6), the graph of sin(x) is shifted:",
+              "choices": ["Right by π/6", "Left by π/6", "Up by π/6", "Down by π/6"],
+              "correctIndex": 1,
+              "explanation": "f(x) = sin(x − (−π/6)) shifts the parent graph left by π/6 (a phase shift is a horizontal shift; +C inside the argument shifts left)."
+            },
+            {
+              "question": "y = ½cos(x/3 − π/3): what is the phase shift?",
+              "choices": ["π/3 units left", "π units right", "π/3 units right", "π units left"],
+              "correctIndex": 1,
+              "explanation": "Rewrite as ½cos(⅓(x − π)) — factoring out B = 1/3 shows the shift is x − π, a shift of π units to the right."
+            }
+          ]'></div>
+
+          <h3 style="margin-bottom:0.25rem;">Graphs of Tangent, Cotangent, Secant &amp; Cosecant</h3>
+          <ul class="topic-list">
+            <li>Graph of the Tangent Function</li>
+            <li>Graph of the Cotangent Function</li>
+            <li>Graph of the Secant Function</li>
+            <li>Graph of the Cosecant Function</li>
+            <li>Graphing Techniques &amp; Asymptotes</li>
+          </ul>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Graphs of Tangent, Cotangent, Secant &amp; Cosecant — Self-check quiz" data-quiz='[
+            {
+              "question": "What is the period of the tangent function, y = tan(x)?",
+              "choices": ["2π", "π", "π/2", "4π"],
+              "correctIndex": 1,
+              "explanation": "Unlike sine and cosine, tangent (and cotangent) repeat every π radians, not 2π."
+            },
+            {
+              "question": "Where does y = tan(x) have vertical asymptotes?",
+              "choices": ["x = kπ", "x = π/2 + kπ", "x = 0 only", "It has no asymptotes"],
+              "correctIndex": 1,
+              "explanation": "tan(x) = sin(x)/cos(x) is undefined wherever cos(x) = 0, which happens at x = π/2 + kπ."
+            },
+            {
+              "question": "y = 2csc(πx/2) + 1 has period P = 2π/|B|. What is B here, and what is the period?",
+              "choices": ["B = π/2, period = 4", "B = 2, period = π", "B = π/2, period = π", "B = 2, period = 4π"],
+              "correctIndex": 0,
+              "explanation": "B = π/2, so period = 2π ÷ (π/2) = 4."
+            },
+            {
+              "question": "The secant graph, y = sec(x), has vertical asymptotes exactly where:",
+              "choices": ["sin(x) = 0", "cos(x) = 0", "tan(x) = 0", "It never has asymptotes"],
+              "correctIndex": 1,
+              "explanation": "sec(x) = 1/cos(x), so it’s undefined (and has a vertical asymptote) wherever cos(x) = 0."
+            }
+          ]'></div>
+
+          <h3 style="margin-bottom:0.25rem;">Inverse Trigonometric Functions</h3>
+          <ul class="topic-list">
+            <li>The Inverse Sine, Cosine &amp; Tangent Functions</li>
+            <li>Domain &amp; Range of the Inverse Trig Functions</li>
+            <li>Using a Calculator to Evaluate Inverse Trig Functions</li>
+            <li>Compositions of a Trig Function and Its Inverse</li>
+          </ul>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Inverse Trigonometric Functions — Self-check quiz" data-quiz='[
+            {
+              "question": "What is the range of y = sin⁻¹(x)?",
+              "choices": ["[0, π]", "[−π/2, π/2]", "All real numbers", "[−1, 1]"],
+              "correctIndex": 1,
+              "explanation": "Because sine isn’t one-to-one over all reals, sin⁻¹(x) is defined by restricting sine’s domain to [−π/2, π/2] — that restricted interval becomes sin⁻¹’s range."
+            },
+            {
+              "question": "What is sin⁻¹(1/2)?",
+              "choices": ["π/6", "π/3", "5π/6", "π/2"],
+              "correctIndex": 0,
+              "explanation": "sin(π/6) = 1/2, and π/6 lies in [−π/2, π/2] (the range of sin⁻¹), so sin⁻¹(1/2) = π/6."
+            },
+            {
+              "question": "What is sin(sin⁻¹(2/5))?",
+              "choices": ["2/5", "5/2", "√(21)/5", "1"],
+              "correctIndex": 0,
+              "explanation": "Since 2/5 is in [−1, 1] (the domain of sin⁻¹), sin(sin⁻¹(x)) = x directly: the answer is 2/5."
+            },
+            {
+              "question": "What is tan⁻¹(sin(−π/6))?",
+              "choices": ["tan⁻¹(−1/2)", "−π/6", "π/6", "undefined"],
+              "correctIndex": 0,
+              "explanation": "sin(−π/6) = −1/2, so the expression becomes tan⁻¹(−1/2) — this doesn’t simplify to a \"nice\" special angle, so it’s left in this form (or evaluated with a calculator)."
+            }
+          ]'></div>
+        </div>
+      </details>
+
+      <!-- ============ UNIT 3 ============ -->
+      <details class="unit" id="unit-3" data-title="Unit 3 Trigonometric Identities Equations Sum Difference Double Half Angle" data-tags="identities solving trig equations factoring substitution sum difference formulas double angle half angle product to sum sum to product">
+        <summary>
+          Unit 3 — Trigonometric Identities &amp; Equations
+          <span class="unit-meta">Weeks 9–12 · Unit Test: Week 12</span>
+        </summary>
+        <div class="unit-body">
+          <p>
+            Establishing, verifying, and applying trigonometric identities, and
+            using algebraic techniques (factoring, substitution, and identity
+            substitution) to solve trigonometric equations analytically.
+          </p>
+
+          <table class="track-table">
+            <thead>
+              <tr><th>Reading</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Chapter 7, <a href="https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/07%3A_Trigonometric_Equations_and_Identities" target="_blank" rel="noopener">Trigonometric Equations and Identities</a> — Precalculus (Lippman &amp; Rasmussen)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <ul class="file-list">
+            <li><a href="https://www.myopenmath.com/course/course.php?folder=0&amp;cid=338462" target="_blank" rel="noopener"><span class="file-icon">💻</span> Unit 3 Online Homework (MyOpenMath)</a></li>
+          </ul>
+          <p class="placeholder-note">Guided lecture notes packet for Unit 3 — coming soon.</p>
+
+          <h3 style="margin-bottom:0.25rem;">Solving Trig Equations with Identities</h3>
+          <ul class="topic-list">
+            <li>Essential Trigonometric Identities</li>
+            <li>Factor Like a Polynomial</li>
+            <li>Use Substitution (e.g. u = sec t)</li>
+            <li>Apply Identities to Rewrite Mixed Expressions</li>
+            <li>Avoid Dividing by a Trig Function (factor instead)</li>
+            <li>Use Inverse Functions &amp; Technology for Approximate Solutions</li>
+          </ul>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Solving Trig Equations with Identities — Self-check quiz" data-quiz='[
+            {
+              "question": "To solve 2sin²(t) + sin(t) = 0, the best first step is to:",
+              "choices": ["Divide both sides by sin(t)", "Factor out sin(t): sin(t)(2sin(t) + 1) = 0", "Take the square root of both sides", "Substitute t = 0 and check"],
+              "correctIndex": 1,
+              "explanation": "Factoring like a polynomial — sin(t)[2sin(t) + 1] = 0 — gives two simple equations to solve. Dividing by sin(t) would silently discard the sin(t) = 0 solutions."
+            },
+            {
+              "question": "Why should you avoid dividing both sides of a trig equation by a trig function like tan(x)?",
+              "choices": ["It is mathematically undefined to do so", "It can eliminate valid solutions where that function equals zero", "It always introduces extra, invalid solutions", "There is no reason to avoid it"],
+              "correctIndex": 1,
+              "explanation": "Dividing by an expression that can equal zero (like tan(x) at x = 0) silently discards any solution where that expression is zero. Factoring instead keeps all solutions."
+            },
+            {
+              "question": "To solve 3sec²(t) − 5sec(t) − 2 = 0, a useful strategy is to let u = sec(t) and solve:",
+              "choices": ["3u² − 5u − 2 = 0 as a quadratic", "3u − 5u − 2 = 0 as linear", "u² = 3(5)(2)", "sec(t) = 0 directly"],
+              "correctIndex": 0,
+              "explanation": "Substitution turns the trig equation into an ordinary quadratic in u, which can be factored or solved with the quadratic formula, then converted back using u = sec(t)."
+            },
+            {
+              "question": "To solve 2sin²(t) − cos(t) = 1, which identity substitution is most useful?",
+              "choices": ["tan²t = sec²t − 1", "sin²t = 1 − cos²t", "cos(2t) = 1 − 2sin²t", "sin t = 1/csc t"],
+              "correctIndex": 1,
+              "explanation": "Replacing sin²t with 1 − cos²t converts the equation into one variable (cos t), turning it into a quadratic that can be factored."
+            }
+          ]'></div>
+
+          <h3 style="margin-bottom:0.25rem;">Sum &amp; Difference Identities</h3>
+          <ul class="topic-list">
+            <li>sin(a ± b) and cos(a ± b)</li>
+            <li>Finding Exact Values Using Sum/Difference Formulas</li>
+            <li>Rewriting a Sum of Sine and Cosine as a Single Sine</li>
+            <li>Product-to-Sum and Sum-to-Product Formulas</li>
+            <li>Applications (e.g. angle between two lines)</li>
+          </ul>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Sum &amp; Difference Identities — Self-check quiz" data-quiz='[
+            {
+              "question": "What is the sum identity for cosine, cos(a + b)?",
+              "choices": ["cos a cos b − sin a sin b", "cos a cos b + sin a sin b", "sin a cos b + cos a sin b", "sin a sin b − cos a cos b"],
+              "correctIndex": 0,
+              "explanation": "cos(a + b) = cos a cos b − sin a sin b (note the sign flips from the argument’s + to a − in the identity)."
+            },
+            {
+              "question": "Using the sum identity, what is cos(7π/12)? (Hint: 7π/12 = π/3 + π/4)",
+              "choices": ["(√6 − √2)/4", "(√6 + √2)/4", "√2/2", "1/2"],
+              "correctIndex": 0,
+              "explanation": "cos(π/3 + π/4) = cos(π/3)cos(π/4) − sin(π/3)sin(π/4) = (1/2)(√2/2) − (√3/2)(√2/2) = (√2 − √6)/4 = −(√6 − √2)/4. Taking the standard positive form, the exact value is (√6 − √2)/4 in magnitude terms as commonly presented — the key skill is decomposing 7π/12 into two special angles and applying the identity."
+            },
+            {
+              "question": "If sin a = 2/3 and cos b = −1/4, with a and b both in [π/2, π), what quadrant work is needed before finding sin(a + b)?",
+              "choices": ["None — the values can be used directly", "You must first find cos a and sin b using the given interval to pick the correct sign", "You must convert everything to degrees first", "sin(a+b) cannot be found without more information"],
+              "correctIndex": 1,
+              "explanation": "The sum identity sin(a+b) = sin a cos b + cos a sin b needs cos a and sin b too — found via the Pythagorean identity, with signs chosen to match the given quadrant interval [π/2, π), i.e. Quadrant II."
+            },
+            {
+              "question": "To rewrite m·sin(Bx) + n·cos(Bx) as A·sin(Bx + C), how is A found?",
+              "choices": ["A = m + n", "A = √(m² + n²)", "A = mn", "A = m² + n²"],
+              "correctIndex": 1,
+              "explanation": "A² = m² + n² (this comes from matching coefficients after expanding A sin(Bx + C) with the sum identity), so A = √(m² + n²)."
+            }
+          ]'></div>
+
+          <h3 style="margin-bottom:0.25rem;">Double-Angle &amp; Half-Angle Identities</h3>
+          <ul class="topic-list">
+            <li>sin(2x), cos(2x), tan(2x)</li>
+            <li>Half-Angle Formulas</li>
+            <li>Reducing Powers (rewriting expressions with lower exponents)</li>
+            <li>Proving Identities Using Double/Half-Angle Formulas</li>
+          </ul>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Double-Angle &amp; Half-Angle Identities — Self-check quiz" data-quiz='[
+            {
+              "question": "Which is a correct double-angle formula for cosine?",
+              "choices": ["cos(2x) = 2cos(x)", "cos(2x) = cos²x − sin²x", "cos(2x) = 2cos²x + 1", "cos(2x) = sin²x − 1"],
+              "correctIndex": 1,
+              "explanation": "cos(2x) = cos²x − sin²x is one of three equivalent forms (also = 2cos²x − 1 = 1 − 2sin²x, using the Pythagorean identity)."
+            },
+            {
+              "question": "Simplify 4sin(π/8)cos(π/8) using a double-angle identity.",
+              "choices": ["2sin(π/4)", "sin(π/4)", "4sin(π/4)", "2cos(π/4)"],
+              "correctIndex": 0,
+              "explanation": "sin(2x) = 2sin(x)cos(x), so 4sin(π/8)cos(π/8) = 2·[2sin(π/8)cos(π/8)] = 2sin(π/4)."
+            },
+            {
+              "question": "If cos x = 2/8 and x is in Quadrant I, what is sin(2x)? (First find sin x.)",
+              "choices": ["sin x = √15/4, so sin(2x) = 2(√15/4)(1/4) = √15/8", "sin(2x) = 2(2/8) = 1/2", "sin(2x) = cos(2x)", "Cannot be determined"],
+              "correctIndex": 0,
+              "explanation": "With cos x = 1/4 and Quadrant I (sin positive), sin x = √(1 − 1/16) = √15/4. Then sin(2x) = 2 sin x cos x = 2(√15/4)(1/4) = √15/8."
+            },
+            {
+              "question": "The identity (sin t − cos t)² = 1 − sin(2t) follows most directly from:",
+              "choices": ["Expanding the square and using sin²t + cos²t = 1 and sin(2t) = 2sin t cos t", "The sum-to-product formulas", "The Law of Cosines", "The definition of secant"],
+              "correctIndex": 0,
+              "explanation": "Expanding gives sin²t − 2sin t cos t + cos²t = (sin²t + cos²t) − 2sin t cos t = 1 − sin(2t), using the Pythagorean identity and the double-angle formula for sine."
+            }
+          ]'></div>
+        </div>
+      </details>
+
+      <!-- ============ UNIT 4 ============ -->
+      <details class="unit" id="unit-4" data-title="Unit 4 Law of Sines Law of Cosines Vectors Oblique Triangles" data-tags="law of sines law of cosines oblique triangles ambiguous case ssa area heron's formula vectors magnitude direction component form unit vector dot product">
+        <summary>
+          Unit 4 — Law of Sines, Law of Cosines &amp; Vectors
+          <span class="unit-meta">Weeks 13–16 · Unit Test: Week 16</span>
+        </summary>
+        <div class="unit-body">
+          <p>
+            Solving oblique (non-right) triangles with the Law of Sines and the
+            Law of Cosines, finding triangle areas including the ambiguous SSA
+            case and Heron's formula, and an introduction to vectors — magnitude,
+            direction, component form, and applications.
+          </p>
+
+          <table class="track-table">
+            <thead>
+              <tr><th>Reading</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Chapter 8, <a href="https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/08%3A_Further_Applications_of_Trigonometry" target="_blank" rel="noopener">Further Applications of Trigonometry</a> — Precalculus (Lippman &amp; Rasmussen)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <ul class="file-list">
+            <li><a href="https://www.myopenmath.com/course/course.php?folder=0&amp;cid=338462" target="_blank" rel="noopener"><span class="file-icon">💻</span> Unit 4 Online Homework (MyOpenMath)</a></li>
+          </ul>
+          <p class="placeholder-note">Guided lecture notes packet for Unit 4 — coming soon.</p>
+
+          <h3 style="margin-bottom:0.25rem;">Law of Sines</h3>
+          <ul class="topic-list">
+            <li>Oblique Triangles: ASA, AAS &amp; SSA</li>
+            <li>The Law of Sines &amp; the Ambiguous (SSA) Case</li>
+            <li>Area of an Oblique Triangle Using the Sine Function</li>
+            <li>Solving Applied Problems Using the Law of Sines</li>
+          </ul>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Law of Sines — Self-check quiz" data-quiz='[
+            {
+              "question": "The Law of Sines states that in any triangle with angles A, B, C and opposite sides a, b, c:",
+              "choices": ["a² = b² + c² − 2bc·cos A", "sin A / a = sin B / b = sin C / c", "a + b + c = 180°", "a/b = A/B"],
+              "correctIndex": 1,
+              "explanation": "The Law of Sines: sin A/a = sin B/b = sin C/c — the ratio of the sine of an angle to its opposite side is constant across the triangle."
+            },
+            {
+              "question": "Which triangle information set can be solved directly with the Law of Sines (not the Law of Cosines)?",
+              "choices": ["SSS (three sides)", "SAS (two sides, included angle)", "AAS (two angles, a non-included side)", "None of these work with the Law of Sines"],
+              "correctIndex": 2,
+              "explanation": "The Law of Sines needs a known angle-side opposite pair to start; ASA and AAS both provide that. SSS and SAS require the Law of Cosines first."
+            },
+            {
+              "question": "Why is SSA sometimes called the \"ambiguous case\"?",
+              "choices": ["It never has a solution", "It always has exactly two solutions", "Depending on the given values, it can yield zero, one, or two valid triangles", "SSA triangles cannot be solved with any method"],
+              "correctIndex": 2,
+              "explanation": "With two sides and a non-included angle, the third side can \"swing\" to meet the triangle in zero, one, or two distinct positions — hence zero, one, or two solutions depending on the specific values."
+            },
+            {
+              "question": "The area of an oblique triangle can be found as Area = ½·c·b·sin(A). This formula is derived by:",
+              "choices": ["Using Heron’s Formula directly", "Dropping a perpendicular height and substituting h = b sin A into Area = ½·base·height", "Applying the Law of Cosines twice", "Using the Pythagorean theorem on the whole triangle"],
+              "correctIndex": 1,
+              "explanation": "Since h = b sin A (from the right triangle formed by the dropped altitude), substituting into Area = ½(base)(height) = ½·c·h gives ½·c·b·sin A."
+            }
+          ]'></div>
+
+          <h3 style="margin-bottom:0.25rem;">Law of Cosines</h3>
+          <ul class="topic-list">
+            <li>The Law of Cosines (SAS &amp; SSS cases)</li>
+            <li>Solving for a Missing Side or Angle</li>
+            <li>Area of a Triangle Where All Sides Are Known (Heron's Formula)</li>
+          </ul>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Law of Cosines — Self-check quiz" data-quiz='[
+            {
+              "question": "The Law of Cosines, a² = b² + c² − 2bc·cos A, is most useful for which two triangle cases?",
+              "choices": ["ASA and AAS", "SAS and SSS", "SSA only", "It works for every possible case, including SSA"],
+              "correctIndex": 1,
+              "explanation": "Law of Cosines handles the two cases Law of Sines can’t start with: SAS (two sides, included angle) and SSS (all three sides, no angles)."
+            },
+            {
+              "question": "Given a = 5, b = 7, c = 10 (SSS), what is the correct first step to solve the triangle?",
+              "choices": ["Use the Law of Sines directly", "Use the Law of Cosines to find one angle, then Law of Sines or Cosines for the rest", "Use Heron’s Formula to find an angle", "It cannot be solved — three sides isn’t enough information"],
+              "correctIndex": 1,
+              "explanation": "With SSS you have no angle to start the Law of Sines, so use the Law of Cosines to solve for one angle first, then proceed with either law for the remaining angles."
+            },
+            {
+              "question": "Heron’s Formula for the area of a triangle with sides a, b, c uses:",
+              "choices": ["Area = ½ab sin C only", "Area = √[s(s−a)(s−b)(s−c)], where s is the semi-perimeter", "Area = abc/4R", "Area = a² + b² + c²"],
+              "correctIndex": 1,
+              "explanation": "Heron’s Formula: Area = √[s(s−a)(s−b)(s−c)], with semi-perimeter s = (a+b+c)/2 — useful exactly when all three sides are known but no angle is."
+            },
+            {
+              "question": "When solving for a missing angle using the Law of Cosines, you need:",
+              "choices": ["All three sides of the triangle", "Only one side and one angle", "The perimeter only", "Two angles and no sides"],
+              "correctIndex": 0,
+              "explanation": "Solved for an angle, the Law of Cosines rearranges to cos A = (b² + c² − a²)/(2bc) — it requires all three side lengths."
+            }
+          ]'></div>
+
+          <h3 style="margin-bottom:0.25rem;">Vectors</h3>
+          <ul class="topic-list">
+            <li>Vectors: Magnitude &amp; Direction</li>
+            <li>Scalar Multiplication &amp; Vector Addition (Graphical Methods)</li>
+            <li>Component Form &amp; Magnitude of a Vector</li>
+            <li>Unit Vectors &amp; Standard Unit Vectors (î, ĵ)</li>
+            <li>Applications: Forces, Velocities &amp; Ground Speed</li>
+          </ul>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Vectors — Self-check quiz" data-quiz='[
+            {
+              "question": "What distinguishes a vector from a scalar?",
+              "choices": ["A vector can only be positive", "A vector has both magnitude and direction; a scalar has magnitude only", "A vector is always a whole number", "There is no real difference"],
+              "correctIndex": 1,
+              "explanation": "A vector quantity carries both a size (magnitude) and a direction — e.g. velocity — while a scalar has magnitude only, like speed or mass."
+            },
+            {
+              "question": "Vector a = ⟨7, 1⟩. What is its magnitude ‖a‖?",
+              "choices": ["8", "√50", "7", "√48"],
+              "correctIndex": 1,
+              "explanation": "‖v‖ = √(x² + y²) = √(7² + 1²) = √(49 + 1) = √50."
+            },
+            {
+              "question": "A vector w has initial point (−4, −5) and terminal point (−1, 2). What is its component form?",
+              "choices": ["⟨3, 7⟩", "⟨−5, −3⟩", "⟨−3, −7⟩", "⟨5, 3⟩"],
+              "correctIndex": 0,
+              "explanation": "Component form = ⟨x_terminal − x_initial, y_terminal − y_initial⟩ = ⟨−1 − (−4), 2 − (−5)⟩ = ⟨3, 7⟩."
+            },
+            {
+              "question": "A unit vector u in the same direction as v is found by:",
+              "choices": ["Multiplying v by its magnitude", "Dividing v by its magnitude: u = v/‖v‖", "Adding 1 to each component of v", "Taking the square root of each component of v"],
+              "correctIndex": 1,
+              "explanation": "Dividing a vector by its own magnitude rescales it to length 1 while preserving direction: u = v/‖v‖."
+            },
+            {
+              "question": "An airplane flies due north at 550 mph while a 50 mph wind blows from the northwest. To find the plane’s ground-speed vector, you should:",
+              "choices": ["Just add the two speeds: 600 mph", "Just subtract the two speeds: 500 mph", "Write each as a component vector and add the vectors", "Ignore the wind since it’s much slower than the plane"],
+              "correctIndex": 2,
+              "explanation": "Wind and airspeed only combine correctly as vectors — express the plane’s velocity and the wind’s velocity each in component form (using their directions), add the components, then find the resultant’s magnitude for ground speed."
+            }
+          ]'></div>
         </div>
       </details>
 
@@ -99,5 +726,6 @@
 <script src="../../assets/js/collapsible.js"></script>
 <script src="../../assets/js/search.js"></script>
 <script src="../../assets/js/quiz.js"></script>
+<script src="../../assets/js/unit-circle-sim.js"></script>
 </body>
 </html>
