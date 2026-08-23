@@ -336,28 +336,227 @@
           <span class="unit-meta">Weeks 5–8 · Exam: Week 8</span>
         </summary>
         <div class="unit-body">
+          <p>
+            How and why things accelerate — Newton's three laws, friction
+            and drag, elastic materials, statics and torque, and the
+            work-energy framework that ties motion to energy.
+          </p>
+
+          <table class="track-table">
+            <thead>
+              <tr><th>Track</th><th>Reading</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PHYS-1410 (Trig)</td>
+                <td>Chapters 4, 5, 9 &amp; 7 (in that order), <a href="https://openstax.org/books/college-physics-2e/pages/4-introduction-to-dynamics-newtons-laws-of-motion" target="_blank" rel="noopener">College Physics 2e</a></td>
+              </tr>
+              <tr>
+                <td>PHYS-2110 (Calc)</td>
+                <td>Chapters 5, 6, 12 &amp; 7–8 (in that order), <a href="https://openstax.org/books/university-physics-volume-1/pages/5-introduction" target="_blank" rel="noopener">University Physics Vol. 1</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="placeholder-note">This unit follows the course's teaching order rather than strict chapter order: Statics &amp; Torque (Chapter 9 in the trig-track text) is covered before returning to Work &amp; Energy (Chapter 7). Uniform Circular Motion (Chapter 6) is covered in Unit 3 instead.</p>
+
+          <ul class="file-list">
+            <li><a href="files/unit2-guided-notes.pdf"><span class="file-icon">📄</span> Unit 2 Guided Lecture Notes (PDF)</a></li>
+            <li><a href="https://wnccnet-my.sharepoint.com/:p:/g/personal/gunapale_wncc_edu/IQBpP8pi8ruQQ5CaXv2gvooHAWBVTH_V8ma_dg5oeoz2nGE?e=Nd4ad1" target="_blank" rel="noopener"><span class="file-icon">📊</span> Unit 2 Slides (PowerPoint, via OneDrive)</a></li>
+          </ul>
+          <p class="placeholder-note">Guided notes follow the College Physics (trig-track) chapter numbering and are formatted as a fill-in-the-blank Cornell-notes packet for use during lecture.</p>
+
+          <h3 style="margin-bottom:0.25rem;">Newton's Laws of Motion</h3>
           <ul class="topic-list">
-            <span class="chapter-label">Week 5 — Forces and Newton's Laws</span>
             <li>Force and Mass</li>
-            <li>Newton's Laws of Motion</li>
+            <li>Newton's First Law: Inertia</li>
+            <li>Newton's Second Law: Force, Mass &amp; Acceleration</li>
+            <li>Newton's Third Law: Action &amp; Reaction</li>
             <li>Free-Body Diagrams</li>
-            <li>Weight and Normal Forces</li>
+            <li>Normal Force, Tension &amp; Weight on an Incline</li>
+          </ul>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Newton's Laws of Motion — Self-check quiz" data-quiz='[
+            {
+              "question": "A net force of 12 N acts on a 4 kg object. What is its acceleration?",
+              "choices": ["3 m/s²", "48 m/s²", "0.33 m/s²", "16 m/s²"],
+              "correctIndex": 0,
+              "explanation": "Newton’s Second Law: a = Fnet / m = 12 N / 4 kg = 3 m/s²."
+            },
+            {
+              "question": "According to Newton’s First Law, an object moving at constant velocity with zero net force acting on it will:",
+              "choices": ["Gradually slow down and stop", "Continue at that same constant velocity", "Accelerate in the direction it is moving", "Reverse direction"],
+              "correctIndex": 1,
+              "explanation": "This is the law of inertia — with no net external force, velocity (speed and direction) stays constant, whether that velocity is zero or not."
+            },
+            {
+              "question": "A book rests on a table. By Newton’s Third Law, the reaction force to “the table pushes up on the book” is:",
+              "choices": ["The book pushes down on the table", "Gravity pulling the book downward", "The normal force on the book", "Friction between the book and table"],
+              "correctIndex": 0,
+              "explanation": "Third-law pairs act on two different objects, in opposite directions, with equal magnitude: table-pushes-book pairs with book-pushes-table. (Gravity on the book is a separate, unrelated force — it pairs with the book pulling the Earth upward.)"
+            },
+            {
+              "question": "A crate sits on a frictionless ramp inclined at angle θ. What is the component of its weight directed into the ramp surface?",
+              "choices": ["mg", "mg sin θ", "mg cos θ", "mg tan θ"],
+              "correctIndex": 2,
+              "explanation": "The weight component perpendicular to (into) the incline surface is mg cos θ; the component along the surface, pulling the crate down the slope, is mg sin θ."
+            }
+          ]'></div>
 
-            <span class="chapter-label">Week 6 — Applications of Newton's Laws</span>
-            <li>Friction</li>
-            <li>Drag</li>
-            <li>Elasticity</li>
+          <h3 style="margin-bottom:0.25rem;">Friction, Drag &amp; Elasticity</h3>
+          <ul class="topic-list">
+            <li>Static &amp; Kinetic Friction</li>
+            <li>Drag Forces</li>
+            <li>Elasticity: Stress &amp; Strain</li>
+          </ul>
 
-            <span class="chapter-label">Week 7 — Statics and Torques</span>
-            <li>Equilibrium</li>
-            <li>Statics and Torque</li>
+          <h4 style="margin-bottom:0.25rem;">Interactive simulator — Force &amp; Friction</h4>
+          <div class="sim-wrap" data-force-sim>
+            <div class="sim-layout">
+              <div class="sim-canvas-box">
+                <canvas data-force-scene></canvas>
+              </div>
+              <div class="sim-controls">
+                <label>
+                  Mass
+                  <input type="range" min="1" max="50" step="1" value="10" data-force-mass />
+                  <output data-force-mass-out>10 kg</output>
+                </label>
+                <label>
+                  Applied force (+ right / − left)
+                  <input type="range" min="-150" max="150" step="5" value="40" data-force-applied />
+                  <output data-force-applied-out>40 N</output>
+                </label>
+                <label>
+                  Static friction coefficient (μs)
+                  <input type="range" min="0" max="1" step="0.05" value="0.5" data-force-mus />
+                  <output data-force-mus-out>0.50</output>
+                </label>
+                <label>
+                  Kinetic friction coefficient (μk)
+                  <input type="range" min="0" max="1" step="0.05" value="0.35" data-force-muk />
+                  <output data-force-muk-out>0.35</output>
+                </label>
+                <label>
+                  Time (drag to scrub)
+                  <input type="range" min="0" max="5" step="0.02" value="0" data-force-time />
+                  <output data-force-time-out>0.00 s</output>
+                </label>
+                <div class="sim-buttons">
+                  <button type="button" class="btn btn-primary" data-force-play>Play</button>
+                  <button type="button" class="btn" data-force-reset>Reset</button>
+                </div>
+                <div class="sim-readout">
+                  <div>Status: <strong data-force-status>–</strong></div>
+                  <div>Normal force: <strong data-force-N>–</strong></div>
+                  <div>Friction force: <strong data-force-f>–</strong></div>
+                  <div>Net force: <strong data-force-net>–</strong></div>
+                  <div>Acceleration: <strong data-force-a>–</strong></div>
+                  <div>Position: <strong data-force-pos>–</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="placeholder-note">Note the coefficient of kinetic friction can't exceed the static coefficient — dragging μk past μs pulls it back down automatically, matching how real surfaces behave.</p>
 
-            <span class="chapter-label">Week 8 — Work and Energy (Unit 2 Exam)</span>
-            <li>Kinetic and Potential Energy</li>
-            <li>Conservative and Non-Conservative Forces</li>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Friction, Drag &amp; Elasticity — Self-check quiz" data-quiz='[
+            {
+              "question": "You push a heavy crate but it doesn’t budge. Why not?",
+              "choices": ["Static friction is exactly balancing your applied force", "There is no friction acting on the crate", "Kinetic friction is pushing it back harder than you push", "Gravity is canceling your push"],
+              "correctIndex": 0,
+              "explanation": "As long as your applied force stays below the maximum static friction (μsN), static friction adjusts to exactly cancel it — net force stays zero and the crate stays put."
+            },
+            {
+              "question": "For a given pair of surfaces, how does the coefficient of static friction (μs) usually compare to the coefficient of kinetic friction (μk)?",
+              "choices": ["μs is usually greater than or equal to μk", "μk is always greater than μs", "They are always exactly equal", "There is no general relationship"],
+              "correctIndex": 0,
+              "explanation": "It generally takes more force to start an object sliding than to keep it sliding, so μs ≥ μk for most surface pairs."
+            },
+            {
+              "question": "In the higher-speed drag regime (FD = ½CρAv²), what happens to drag force if an object’s speed doubles?",
+              "choices": ["It stays the same", "It doubles", "It quadruples", "It is cut in half"],
+              "correctIndex": 2,
+              "explanation": "Drag force in this regime is proportional to v², so doubling speed quadruples the drag force."
+            },
+            {
+              "question": "Hooke’s Law describes the restoring force of a stretched or compressed spring as:",
+              "choices": ["Proportional to the deformation: F = kΔL", "Constant, regardless of how far it’s stretched", "Inversely proportional to the deformation", "Proportional to the object’s velocity"],
+              "correctIndex": 0,
+              "explanation": "Hooke’s Law: F = kΔL — the restoring force grows linearly with how far the spring is stretched or compressed, as long as the deformation isn’t too large."
+            }
+          ]'></div>
+
+          <h3 style="margin-bottom:0.25rem;">Statics &amp; Torque</h3>
+          <ul class="topic-list">
+            <li>The First Condition for Equilibrium</li>
+            <li>Torque &amp; the Second Condition for Equilibrium</li>
+            <li>Stability: Stable, Unstable &amp; Neutral Equilibrium</li>
+            <li>Applications of Statics</li>
+          </ul>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Statics &amp; Torque — Self-check quiz" data-quiz='[
+            {
+              "question": "For an object to be in complete static equilibrium, which must be true?",
+              "choices": ["Only the net force must be zero", "Only the net torque must be zero", "Both the net force and the net torque must be zero", "Neither — equilibrium just means the object is heavy enough to not move"],
+              "correctIndex": 2,
+              "explanation": "Static equilibrium requires both conditions: ΣF = 0 (no linear acceleration) and Στ = 0 (no rotational acceleration)."
+            },
+            {
+              "question": "Torque depends on the applied force and:",
+              "choices": ["The object’s mass", "The perpendicular lever arm distance from the pivot point", "The object’s velocity", "The surrounding temperature"],
+              "correctIndex": 1,
+              "explanation": "τ = r⊥F — torque depends on the force’s magnitude and how far its line of action is from the pivot, measured perpendicular to that line."
+            },
+            {
+              "question": "By the standard sign convention, a torque that would rotate an object counterclockwise is:",
+              "choices": ["Positive", "Negative", "Always zero", "Undefined"],
+              "correctIndex": 0,
+              "explanation": "By convention, counterclockwise torques are taken as positive and clockwise torques as negative."
+            },
+            {
+              "question": "A marble sits at the bottom of a curved bowl. Nudged slightly, it rolls back down to the bottom. This is an example of:",
+              "choices": ["Unstable equilibrium", "Neutral equilibrium", "Stable equilibrium", "No equilibrium at all"],
+              "correctIndex": 2,
+              "explanation": "In stable equilibrium, a small displacement creates a restoring force or torque that pushes the object back toward its original position — exactly what happens as the marble rolls back to the bottom."
+            }
+          ]'></div>
+
+          <h3 style="margin-bottom:0.25rem;">Work &amp; Energy</h3>
+          <ul class="topic-list">
+            <li>Work: The Scientific Definition</li>
+            <li>Kinetic Energy &amp; the Work-Energy Theorem</li>
+            <li>Gravitational Potential Energy</li>
+            <li>Conservative &amp; Nonconservative Forces</li>
+            <li>Conservation of Energy</li>
             <li>Power</li>
           </ul>
-          <p class="placeholder-note">Guided notes, slides, and a practice quiz for this unit haven't been added yet — send them and I'll build it out the same way as Unit 1.</p>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Work &amp; Energy — Self-check quiz" data-quiz='[
+            {
+              "question": "You push a box with a 50 N force, moving it 3 m in the same direction as the force. How much work do you do?",
+              "choices": ["150 J", "50 J", "3 J", "Not enough information"],
+              "correctIndex": 0,
+              "explanation": "W = Fd cos θ. Since the force and displacement point the same direction, θ = 0° and cos 0° = 1, so W = (50 N)(3 m) = 150 J."
+            },
+            {
+              "question": "A force is applied exactly perpendicular to an object’s displacement. How much work does that force do?",
+              "choices": ["Maximum possible work", "Zero work", "Negative work", "It depends on the object’s mass"],
+              "correctIndex": 1,
+              "explanation": "W = Fd cos θ. At θ = 90°, cos 90° = 0, so the force does zero work no matter how large it is — this is why, e.g., the normal force does no work on a sliding block."
+            },
+            {
+              "question": "Which of these is a conservative force?",
+              "choices": ["Kinetic friction", "Air drag", "Gravity", "None of these"],
+              "correctIndex": 2,
+              "explanation": "Gravity is conservative — the work it does depends only on starting and ending height, not the path taken. Friction and drag are nonconservative: they depend on the path and convert mechanical energy into thermal energy."
+            },
+            {
+              "question": "According to the work-energy theorem, the net work done on an object equals:",
+              "choices": ["Its change in momentum", "Its change in kinetic energy", "Its final velocity", "Its weight"],
+              "correctIndex": 1,
+              "explanation": "Wnet = ΔKE = ½mv² − ½mv₀² — the net work done on an object equals the change in its kinetic energy."
+            }
+          ]'></div>
         </div>
       </details>
 
@@ -424,7 +623,7 @@
             <li>Interference and Resonance</li>
 
             <span class="chapter-label">Week 17 — Final Exam</span>
-            <li>Comprehensive final — date to be confirmed</li>
+            <li>Comprehensive final — Wednesday, December 9 at 10:00 AM</li>
           </ul>
           <p class="placeholder-note">Guided notes, slides, and a practice quiz for this unit haven't been added yet — send them and I'll build it out the same way as Unit 1.</p>
         </div>
@@ -449,5 +648,6 @@
 <script src="../../assets/js/quiz.js"></script>
 <script src="../../assets/js/projectile-sim.js"></script>
 <script src="../../assets/js/motion-1d-sim.js"></script>
+<script src="../../assets/js/force-friction-sim.js"></script>
 </body>
 </html>
