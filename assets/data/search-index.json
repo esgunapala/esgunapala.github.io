@@ -162,6 +162,82 @@
     ]
   },
   {
+    "title": "Linear Momentum, Impulse &amp; Collisions \u2014 Self-check quiz",
+    "course": "Physics I",
+    "type": "quiz",
+    "url": "courses/course-1-physics/index.html#unit-3",
+    "tags": [
+      "quiz",
+      "practice",
+      "self-check",
+      "linear",
+      "momentum,",
+      "impulse",
+      "&amp;",
+      "collisions",
+      "\u2014",
+      "self-check",
+      "quiz"
+    ]
+  },
+  {
+    "title": "Uniform Circular Motion \u2014 Self-check quiz",
+    "course": "Physics I",
+    "type": "quiz",
+    "url": "courses/course-1-physics/index.html#unit-3",
+    "tags": [
+      "quiz",
+      "practice",
+      "self-check",
+      "uniform",
+      "circular",
+      "motion",
+      "\u2014",
+      "self-check",
+      "quiz"
+    ]
+  },
+  {
+    "title": "Rotational Kinematics &amp; Rolling Motion \u2014 Self-check quiz",
+    "course": "Physics I",
+    "type": "quiz",
+    "url": "courses/course-1-physics/index.html#unit-3",
+    "tags": [
+      "quiz",
+      "practice",
+      "self-check",
+      "rotational",
+      "kinematics",
+      "&amp;",
+      "rolling",
+      "motion",
+      "\u2014",
+      "self-check",
+      "quiz"
+    ]
+  },
+  {
+    "title": "Torque, Moment of Inertia &amp; Angular Momentum \u2014 Self-check quiz",
+    "course": "Physics I",
+    "type": "quiz",
+    "url": "courses/course-1-physics/index.html#unit-3",
+    "tags": [
+      "quiz",
+      "practice",
+      "self-check",
+      "torque,",
+      "moment",
+      "of",
+      "inertia",
+      "&amp;",
+      "angular",
+      "momentum",
+      "\u2014",
+      "self-check",
+      "quiz"
+    ]
+  },
+  {
     "title": "Unit 4 Fluids Oscillations Hearing",
     "course": "Physics I",
     "type": "unit",
@@ -172,6 +248,71 @@
       "fluids",
       "oscillations",
       "hearing"
+    ]
+  },
+  {
+    "title": "Fluid Statics \u2014 Self-check quiz",
+    "course": "Physics I",
+    "type": "quiz",
+    "url": "courses/course-1-physics/index.html#unit-4",
+    "tags": [
+      "quiz",
+      "practice",
+      "self-check",
+      "fluid",
+      "statics",
+      "\u2014",
+      "self-check",
+      "quiz"
+    ]
+  },
+  {
+    "title": "Fluid Dynamics \u2014 Self-check quiz",
+    "course": "Physics I",
+    "type": "quiz",
+    "url": "courses/course-1-physics/index.html#unit-4",
+    "tags": [
+      "quiz",
+      "practice",
+      "self-check",
+      "fluid",
+      "dynamics",
+      "\u2014",
+      "self-check",
+      "quiz"
+    ]
+  },
+  {
+    "title": "Oscillatory Motion \u2014 Self-check quiz",
+    "course": "Physics I",
+    "type": "quiz",
+    "url": "courses/course-1-physics/index.html#unit-4",
+    "tags": [
+      "quiz",
+      "practice",
+      "self-check",
+      "oscillatory",
+      "motion",
+      "\u2014",
+      "self-check",
+      "quiz"
+    ]
+  },
+  {
+    "title": "Waves &amp; Sound \u2014 Self-check quiz",
+    "course": "Physics I",
+    "type": "quiz",
+    "url": "courses/course-1-physics/index.html#unit-4",
+    "tags": [
+      "quiz",
+      "practice",
+      "self-check",
+      "waves",
+      "&amp;",
+      "sound",
+      "\u2014",
+      "self-check",
+      "quiz"
     ]
   },
   {
@@ -240,6 +381,40 @@
       "(powerpoint,",
       "via",
       "onedrive)"
+    ]
+  },
+  {
+    "title": "Unit 3 Guided Lecture Notes (PDF)",
+    "course": "Physics I",
+    "type": "file",
+    "url": "courses/course-1-physics/files/unit3-guided-notes.pdf",
+    "tags": [
+      "download",
+      "file",
+      "pdf",
+      "unit",
+      "3",
+      "guided",
+      "lecture",
+      "notes",
+      "(pdf)"
+    ]
+  },
+  {
+    "title": "Unit 4 Guided Lecture Notes (PDF)",
+    "course": "Physics I",
+    "type": "file",
+    "url": "courses/course-1-physics/files/unit4-guided-notes.pdf",
+    "tags": [
+      "download",
+      "file",
+      "pdf",
+      "unit",
+      "4",
+      "guided",
+      "lecture",
+      "notes",
+      "(pdf)"
     ]
   },
   {
