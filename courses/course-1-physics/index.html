@@ -561,71 +561,468 @@
       </details>
 
       <!-- ============ UNIT 3 ============ -->
-      <details class="unit" id="unit-3" data-title="Unit 3 Momentum Circular Rotational Motion" data-tags="momentum collisions circular motion rotational motion angular momentum impulse centripetal gravitation angular velocity gyroscope">
+      <details class="unit" id="unit-3" data-title="Unit 3 Momentum Circular Rotational Motion" data-tags="momentum collisions impulse conservation elastic inelastic circular motion centripetal rotational kinematics rolling torque moment of inertia angular momentum center of mass">
         <summary>
           Unit 3 — Momentum &amp; Rotational Motion
           <span class="unit-meta">Weeks 9–12 · Exam: Week 12</span>
         </summary>
         <div class="unit-body">
+          <p>
+            How motion is conserved and how it transfers in collisions, a
+            review of uniform circular motion, and the rotational
+            counterparts of displacement, velocity, force, and momentum.
+          </p>
+
+          <table class="track-table">
+            <thead>
+              <tr><th>Track</th><th>Reading</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PHYS-1410 (Trig)</td>
+                <td>Chapters 8, 6 (§6.1–6.3 only) &amp; 10 (in that order), <a href="https://openstax.org/books/college-physics-2e/pages/8-introduction-to-linear-momentum-and-collisions" target="_blank" rel="noopener">College Physics 2e</a></td>
+              </tr>
+              <tr>
+                <td>PHYS-2110 (Calc)</td>
+                <td>Chapter 9, a review of circular motion from Chapter 4, &amp; Chapters 10–11 (in that order), <a href="https://openstax.org/books/university-physics-volume-1/pages/9-introduction" target="_blank" rel="noopener">University Physics Vol. 1</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="placeholder-note">Uniform Circular Motion (College Physics 2e §6.1–6.3) is a review here — gravitation and satellites (§6.4–6.6) aren't covered in this course. Center of Mass and the rotational-collision/gyroscope material at the end of Chapter 10 are folded into the sections below rather than given their own subsection.</p>
+
+          <ul class="file-list">
+            <li><a href="files/unit3-guided-notes.pdf"><span class="file-icon">📄</span> Unit 3 Guided Lecture Notes (PDF)</a></li>
+          </ul>
+          <p class="placeholder-note">Guided notes follow the College Physics (trig-track) chapter numbering and are formatted as a fill-in-the-blank Cornell-notes packet for use during lecture.</p>
+
+          <h3 style="margin-bottom:0.25rem;">Linear Momentum, Impulse &amp; Collisions</h3>
           <ul class="topic-list">
-            <span class="chapter-label">Week 9 — Linear Momentum &amp; Collisions</span>
             <li>Linear Momentum and Force</li>
             <li>Impulse</li>
             <li>Conservation of Momentum</li>
-            <li>Elastic and Inelastic Collisions in One and Two Dimensions</li>
+            <li>Elastic Collisions in One Dimension</li>
+            <li>Inelastic Collisions in One Dimension</li>
+            <li>Collisions of Point Masses in Two Dimensions</li>
+            <li>Center of Mass</li>
+          </ul>
 
-            <span class="chapter-label">Week 10 — Uniform Circular Motion</span>
-            <li>Angular Velocity</li>
-            <li>Centripetal Acceleration and Centripetal Force</li>
-            <li>Newton's Universal Law of Gravitation</li>
+          <h4 style="margin-bottom:0.25rem;">Interactive simulator — Two-Cart Collisions</h4>
+          <div class="sim-wrap" data-collision-sim>
+            <div class="sim-layout">
+              <div class="sim-canvas-box">
+                <canvas data-collision-scene></canvas>
+              </div>
+              <div class="sim-controls">
+                <label>
+                  Cart 1 mass
+                  <input type="range" min="0.5" max="10" step="0.5" value="2" data-collision-m1 />
+                  <output data-collision-m1-out>2 kg</output>
+                </label>
+                <label>
+                  Cart 1 initial velocity (+ right / − left)
+                  <input type="range" min="-8" max="8" step="0.5" value="2" data-collision-v1 />
+                  <output data-collision-v1-out>2.0 m/s</output>
+                </label>
+                <label>
+                  Cart 2 mass
+                  <input type="range" min="0.5" max="10" step="0.5" value="1" data-collision-m2 />
+                  <output data-collision-m2-out>1 kg</output>
+                </label>
+                <label>
+                  Cart 2 initial velocity (+ right / − left)
+                  <input type="range" min="-8" max="8" step="0.5" value="-1" data-collision-v2 />
+                  <output data-collision-v2-out>-1.0 m/s</output>
+                </label>
+                <label>
+                  Collision type
+                  <select data-collision-mode>
+                    <option value="elastic" selected>Elastic</option>
+                    <option value="inelastic">Perfectly inelastic (sticks together)</option>
+                  </select>
+                </label>
+                <label>
+                  Time (drag to scrub)
+                  <input type="range" min="0" max="6" step="0.02" value="0" data-collision-time />
+                  <output data-collision-time-out>0.00 s</output>
+                </label>
+                <div class="sim-buttons">
+                  <button type="button" class="btn btn-primary" data-collision-play>Play</button>
+                  <button type="button" class="btn" data-collision-reset>Reset</button>
+                </div>
+                <div class="sim-readout">
+                  <div>Status: <strong data-collision-status>–</strong></div>
+                  <div>Cart 1 final velocity: <strong data-collision-v1f>–</strong></div>
+                  <div>Cart 2 final velocity: <strong data-collision-v2f>–</strong></div>
+                  <div>Momentum before: <strong data-collision-p-before>–</strong></div>
+                  <div>Momentum after: <strong data-collision-p-after>–</strong></div>
+                  <div>KE before: <strong data-collision-ke-before>–</strong></div>
+                  <div>KE after: <strong data-collision-ke-after>–</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="placeholder-note">Momentum is conserved in both collision types (compare the two readouts above — they always match). Switch to “perfectly inelastic” to see kinetic energy drop while momentum doesn’t.</p>
 
-            <span class="chapter-label">Week 11 — Rotational Motion and Angular Momentum</span>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Linear Momentum, Impulse &amp; Collisions — Self-check quiz" data-quiz='[
+            {
+              "question": "A 1200 kg car moving at 15 m/s has a momentum of:",
+              "choices": ["18,000 kg·m/s", "80 kg·m/s", "1215 kg·m/s", "9000 kg·m/s"],
+              "correctIndex": 0,
+              "explanation": "p = mv = (1200 kg)(15 m/s) = 18,000 kg·m/s."
+            },
+            {
+              "question": "Why does bending your knees when landing a jump reduce the force on your legs?",
+              "choices": ["It reduces your momentum change", "It increases the time over which your momentum changes, lowering the average force (impulse-momentum theorem)", "It reduces the mass your legs have to support", "It has no physical effect, only a psychological one"],
+              "correctIndex": 1,
+              "explanation": "Your change in momentum (Δp) is fixed by your speed at landing. Bending your knees stretches out the time (Δt) over which that Δp happens, and since FΔt = Δp, a longer Δt means a smaller average force."
+            },
+            {
+              "question": "In a perfectly inelastic collision between two objects, which of the following is true?",
+              "choices": ["Both momentum and kinetic energy are conserved", "Momentum is conserved, but kinetic energy is not", "Kinetic energy is conserved, but momentum is not", "Neither momentum nor kinetic energy is conserved"],
+              "correctIndex": 1,
+              "explanation": "Momentum is always conserved in an isolated collision, elastic or not. In a perfectly inelastic collision, the objects stick together and kinetic energy is lost — converted into heat, sound, and deformation."
+            },
+            {
+              "question": "A 3 kg cart moving at 4 m/s collides head-on and sticks to a stationary 1 kg cart. What is their combined velocity after the collision?",
+              "choices": ["4 m/s", "3 m/s", "1 m/s", "12 m/s"],
+              "correctIndex": 1,
+              "explanation": "Perfectly inelastic collision: v′ = (m1v1i + m2v2i)/(m1 + m2) = (3 kg × 4 m/s + 1 kg × 0)/(4 kg) = 12/4 = 3 m/s."
+            }
+          ]'></div>
+
+          <h3 style="margin-bottom:0.25rem;">Uniform Circular Motion — Review</h3>
+          <ul class="topic-list">
+            <li>Rotation Angle and Angular Velocity</li>
+            <li>Centripetal Acceleration</li>
+            <li>Centripetal Force</li>
+          </ul>
+          <p class="placeholder-note">This is a review of Uniform Circular Motion (College Physics 2e Chapter 6, §6.1–6.3) as a bridge into rotational motion — Newton's Universal Law of Gravitation and satellites (§6.4–6.6) are not covered in this course.</p>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Uniform Circular Motion — Self-check quiz" data-quiz='[
+            {
+              "question": "An object moves in a circle of radius 2 m at a constant angular velocity of 3 rad/s. What is its linear speed?",
+              "choices": ["1.5 m/s", "5 m/s", "6 m/s", "9 m/s"],
+              "correctIndex": 2,
+              "explanation": "v = rω = (2 m)(3 rad/s) = 6 m/s."
+            },
+            {
+              "question": "An object undergoing uniform circular motion has a constant speed. Is it accelerating?",
+              "choices": ["No — constant speed means zero acceleration", "Yes — its direction is constantly changing, which is a centripetal acceleration", "Only if it is also speeding up", "Only at the very top and bottom of the circle"],
+              "correctIndex": 1,
+              "explanation": "Acceleration is any change in velocity, and velocity is a vector — even at constant speed, continuously changing direction means the object is accelerating (centripetally, toward the center)."
+            },
+            {
+              "question": "If the radius of a circular path is doubled while speed stays the same, what happens to the centripetal acceleration?",
+              "choices": ["It doubles", "It stays the same", "It is cut in half", "It quadruples"],
+              "correctIndex": 2,
+              "explanation": "ac = v²/r. With v constant, doubling r halves ac."
+            },
+            {
+              "question": "Is centripetal force a separate, fundamental type of force (like gravity or friction)?",
+              "choices": ["Yes, it is its own fundamental force", "No — it is just the name for whatever net force happens to point toward the center of the circular path", "Yes, but only for objects moving faster than 10 m/s", "No — centripetal force does not actually exist"],
+              "correctIndex": 1,
+              "explanation": "Centripetal force isn’t a new kind of force — it’s the role played by some real force (tension, friction, gravity, the normal force, etc.) whenever that force is directed toward the center of a circle."
+            }
+          ]'></div>
+
+          <h3 style="margin-bottom:0.25rem;">Rotational Kinematics &amp; Rolling Motion</h3>
+          <ul class="topic-list">
             <li>Angular Acceleration</li>
-            <li>Kinematics and Dynamics of Rotational Motion</li>
+            <li>Kinematics of Rotational Motion</li>
+            <li>Rolling Without Slipping</li>
+          </ul>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Rotational Kinematics &amp; Rolling Motion — Self-check quiz" data-quiz='[
+            {
+              "question": "A wheel starts from rest and reaches an angular velocity of 20 rad/s in 4 s. What is its angular acceleration?",
+              "choices": ["5 rad/s²", "80 rad/s²", "0.2 rad/s²", "16 rad/s²"],
+              "correctIndex": 0,
+              "explanation": "α = Δω/Δt = (20 rad/s − 0)/4 s = 5 rad/s²."
+            },
+            {
+              "question": "Which set of equations are the rotational kinematics equations analogous to the linear kinematics equations?",
+              "choices": ["ω = ω0 + αt,  θ = ω0t + ½αt²,  ω² = ω0² + 2αθ", "v = v0 + at,  x = v0t + ½at²  only (there is no rotational third equation)", "τ = Iα only", "L = Iω only"],
+              "correctIndex": 0,
+              "explanation": "Rotational kinematics mirrors linear kinematics term-for-term, with θ replacing x, ω replacing v, and α replacing a."
+            },
+            {
+              "question": "For a wheel of radius r rolling without slipping, how is its center’s linear speed v related to its angular speed ω?",
+              "choices": ["v = ω / r", "v = rω", "v = r + ω", "There is no fixed relationship"],
+              "correctIndex": 1,
+              "explanation": "Rolling without slipping means the contact point is momentarily at rest, which locks the center’s linear speed to v = rω."
+            },
+            {
+              "question": "A point on a spinning, speeding-up wheel can have:",
+              "choices": ["Only centripetal acceleration", "Only tangential acceleration", "Both a tangential acceleration (from speeding up) and a centripetal acceleration (from changing direction), at the same time", "No acceleration, since it moves at constant angular velocity"],
+              "correctIndex": 2,
+              "explanation": "A point on a wheel that is both rotating and speeding up its rotation has a tangential acceleration (at = rα) along its direction of motion, plus the centripetal acceleration (ac = ω²r) it always has just from moving in a circle."
+            }
+          ]'></div>
+
+          <h3 style="margin-bottom:0.25rem;">Torque, Moment of Inertia &amp; Angular Momentum</h3>
+          <ul class="topic-list">
+            <li>Dynamics of Rotational Motion: Rotational Inertia</li>
             <li>Rotational Kinetic Energy</li>
             <li>Angular Momentum and Its Conservation</li>
-            <li>Collisions of Extended Bodies in Two Dimensions</li>
-            <li>Gyroscopic Effects</li>
-
-            <span class="chapter-label">Week 12 — Unit 3 Review and Exam</span>
           </ul>
-          <p class="placeholder-note">Guided notes, slides, and a practice quiz for this unit haven't been added yet — send them and I'll build it out the same way as Unit 1.</p>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Torque, Moment of Inertia &amp; Angular Momentum — Self-check quiz" data-quiz='[
+            {
+              "question": "What is the rotational analog of Newton’s Second Law (F = ma)?",
+              "choices": ["τ = Iα", "L = Iω", "KE = ½Iω²", "p = mv"],
+              "correctIndex": 0,
+              "explanation": "Net torque equals moment of inertia times angular acceleration, τ = Iα — torque plays the role of force, and moment of inertia plays the role of mass."
+            },
+            {
+              "question": "Two objects have the same mass. Object A has that mass concentrated near its rotation axis; Object B has the same mass spread farther from the axis. Which has the larger moment of inertia?",
+              "choices": ["Object A", "Object B", "They are always equal, since mass is the same", "Moment of inertia doesn’t depend on mass distribution"],
+              "correctIndex": 1,
+              "explanation": "Moment of inertia (I = Σmr²) depends on how far mass sits from the axis, not just how much mass there is — spreading the same mass farther out increases I."
+            },
+            {
+              "question": "A rolling ball (versus a frictionless sliding block of the same mass, released from the same height) reaches the bottom of a ramp with:",
+              "choices": ["The same speed as the block, since energy is conserved either way", "A lower speed than the block, because some of its energy went into rotational kinetic energy", "A higher speed than the block", "It depends only on the ball’s radius, not its energy"],
+              "correctIndex": 1,
+              "explanation": "The rolling ball’s total kinetic energy is split between translational (½mv²) and rotational (½Iω²) — since some gravitational PE has to go into spinning it up, it arrives with a lower translational speed than a frictionless sliding block."
+            },
+            {
+              "question": "A figure skater spinning with arms outstretched pulls her arms in. What happens to her spin rate, and why?",
+              "choices": ["It decreases, because her moment of inertia increases", "It increases, because her moment of inertia decreases and angular momentum L = Iω is conserved", "It stays the same, since no external torque acts either way", "It increases because her mass increases"],
+              "correctIndex": 1,
+              "explanation": "With no net external torque, angular momentum L = Iω is conserved. Pulling her arms in decreases I, so ω must increase to keep L constant — this is why she spins faster."
+            }
+          ]'></div>
         </div>
       </details>
 
       <!-- ============ UNIT 4 ============ -->
-      <details class="unit" id="unit-4" data-title="Unit 4 Fluids Oscillations Hearing" data-tags="fluid statics fluid dynamics oscillatory motion physics of hearing final exam density pressure archimedes bernoulli viscosity hooke's law simple harmonic sound doppler resonance">
+      <details class="unit" id="unit-4" data-title="Unit 4 Fluids Oscillations Hearing" data-tags="fluid statics fluid dynamics oscillatory motion physics of hearing final exam density pressure archimedes bernoulli hooke's law simple harmonic pendulum sound doppler resonance standing waves">
         <summary>
           Unit 4 — Fluids &amp; Oscillations
           <span class="unit-meta">Weeks 13–17 · Exam: Week 16</span>
         </summary>
         <div class="unit-body">
+          <p>
+            How fluids behave at rest and in motion, the physics of
+            repeating (oscillatory) motion from springs to pendulums, and
+            how that motion propagates outward as waves and sound.
+          </p>
+
+          <table class="track-table">
+            <thead>
+              <tr><th>Track</th><th>Reading</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PHYS-1410 (Trig)</td>
+                <td>Chapters 11, 12, 16 &amp; 17 (in that order), <a href="https://openstax.org/books/college-physics-2e/pages/11-introduction-to-fluid-statics" target="_blank" rel="noopener">College Physics 2e</a></td>
+              </tr>
+              <tr>
+                <td>PHYS-2110 (Calc)</td>
+                <td>Chapters 14, 15, 16 &amp; 17 (in that order), <a href="https://openstax.org/books/university-physics-volume-1/pages/14-introduction" target="_blank" rel="noopener">University Physics Vol. 1</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="placeholder-note">Not every section of these chapters is covered: Chapter 11 skips §11.1 and §11.8–11.9 (cohesion/adhesion and pressures in the body), and Chapter 12 stops after §12.3 — viscosity and laminar flow (§12.4+) is not covered in this course.</p>
+
+          <ul class="file-list">
+            <li><a href="files/unit4-guided-notes.pdf"><span class="file-icon">📄</span> Unit 4 Guided Lecture Notes (PDF)</a></li>
+          </ul>
+          <p class="placeholder-note">Guided notes follow the College Physics (trig-track) chapter numbering and are formatted as a fill-in-the-blank Cornell-notes packet for use during lecture.</p>
+
+          <h3 style="margin-bottom:0.25rem;">Fluid Statics</h3>
           <ul class="topic-list">
-            <span class="chapter-label">Week 13 — Fluid Statics</span>
-            <li>Density and Pressure</li>
+            <li>Density</li>
+            <li>Pressure</li>
             <li>Variation of Pressure with Depth in a Fluid</li>
             <li>Pascal's Principle</li>
-            <li>Gauge Pressure, Absolute Pressure, and Pressure Measurement</li>
+            <li>Gauge Pressure, Absolute Pressure &amp; Pressure Measurement</li>
             <li>Archimedes' Principle</li>
+          </ul>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Fluid Statics — Self-check quiz" data-quiz='[
+            {
+              "question": "A 2 kg block of material has a volume of 0.001 m³. What is its density?",
+              "choices": ["2 kg/m³", "500 kg/m³", "2000 kg/m³", "0.0005 kg/m³"],
+              "correctIndex": 2,
+              "explanation": "ρ = m/V = 2 kg / 0.001 m³ = 2000 kg/m³."
+            },
+            {
+              "question": "At a given depth in a fluid, the pressure depends on:",
+              "choices": ["The shape of the container", "The total amount (volume) of fluid present", "Only the fluid’s density and the depth", "The container’s material"],
+              "correctIndex": 2,
+              "explanation": "P = P0 + ρgh — pressure at a given depth depends only on the fluid’s density and how deep you are, never on the container’s shape or how much fluid it holds."
+            },
+            {
+              "question": "Pascal’s Principle is the basis for which everyday device?",
+              "choices": ["A thermometer", "A hydraulic car lift", "A pendulum clock", "A tuning fork"],
+              "correctIndex": 1,
+              "explanation": "Pascal’s Principle — that pressure applied to an enclosed fluid transmits undiminished throughout — lets a small force on a small piston become a large force on a large piston, exactly how a hydraulic lift works."
+            },
+            {
+              "question": "A block floats in water with 70% of its volume submerged. What can you conclude about the block’s density?",
+              "choices": ["It is greater than water’s density", "It is equal to water’s density", "It is about 70% of water’s density", "Density cannot be determined from this information"],
+              "correctIndex": 2,
+              "explanation": "For a floating object, the buoyant force (weight of displaced fluid) equals the object’s weight: ρobject × Vtotal × g = ρwater × Vsubmerged × g. This simplifies to ρobject = ρwater × (Vsubmerged/Vtotal) = 70% of water’s density."
+            }
+          ]'></div>
 
-            <span class="chapter-label">Week 14 — Fluid Dynamics and Oscillatory Motion</span>
+          <h3 style="margin-bottom:0.25rem;">Fluid Dynamics</h3>
+          <ul class="topic-list">
             <li>Flow Rate and Its Relation to Velocity</li>
             <li>Bernoulli's Equation</li>
-            <li>Viscosity and Laminar Flow</li>
-
-            <span class="chapter-label">Week 15 — Oscillatory Motion</span>
-            <li>Hooke's Law</li>
-            <li>Simple Harmonic Motion</li>
-
-            <span class="chapter-label">Week 16 — Physics of Hearing (Unit 4 Exam)</span>
-            <li>Sound</li>
-            <li>Doppler Effect</li>
-            <li>Interference and Resonance</li>
-
-            <span class="chapter-label">Week 17 — Final Exam</span>
-            <li>Comprehensive final — Wednesday, December 9 at 10:00 AM</li>
+            <li>General Applications of Bernoulli's Equation</li>
           </ul>
-          <p class="placeholder-note">Guided notes, slides, and a practice quiz for this unit haven't been added yet — send them and I'll build it out the same way as Unit 1.</p>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Fluid Dynamics — Self-check quiz" data-quiz='[
+            {
+              "question": "A pipe narrows from a wide section to a narrow section. According to the continuity equation, as the fluid moves into the narrow section, its speed:",
+              "choices": ["Decreases", "Increases", "Stays the same", "Depends only on the fluid’s density"],
+              "correctIndex": 1,
+              "explanation": "Continuity: A1v1 = A2v2. Since flow rate must stay constant, a smaller cross-sectional area (A2) requires a larger speed (v2)."
+            },
+            {
+              "question": "According to Bernoulli’s Equation, where a fluid’s speed is higher (at the same height), its pressure is:",
+              "choices": ["Higher", "Lower", "Unchanged", "Impossible to determine"],
+              "correctIndex": 1,
+              "explanation": "Bernoulli’s Equation, P + ½ρv² + ρgh = constant, means that at the same height, an increase in v must be balanced by a decrease in P."
+            },
+            {
+              "question": "Bernoulli’s Equation is fundamentally a statement of:",
+              "choices": ["Conservation of momentum", "Conservation of energy", "Conservation of mass only", "Newton’s Third Law"],
+              "correctIndex": 1,
+              "explanation": "Bernoulli’s Equation adds up pressure energy, kinetic energy, and gravitational potential energy per unit volume, and states that this total stays constant along a streamline — it’s conservation of energy applied to fluid flow."
+            },
+            {
+              "question": "Which everyday phenomenon is explained by Bernoulli’s Equation?",
+              "choices": ["A boat floating on water", "Lift generated by an airplane wing", "A ball rolling down a ramp", "Sound echoing off a wall"],
+              "correctIndex": 1,
+              "explanation": "Air moving faster over the curved top of a wing has lower pressure than the slower air beneath it, and that pressure difference produces lift — a direct application of Bernoulli’s Equation."
+            }
+          ]'></div>
+
+          <h3 style="margin-bottom:0.25rem;">Oscillatory Motion</h3>
+          <ul class="topic-list">
+            <li>Period and Frequency in Oscillations</li>
+            <li>Simple Harmonic Motion</li>
+            <li>The Simple Pendulum</li>
+            <li>Uniform Circular Motion and Simple Harmonic Motion</li>
+          </ul>
+
+          <h4 style="margin-bottom:0.25rem;">Interactive simulator — Mass on a Spring (SHM)</h4>
+          <div class="sim-wrap" data-shm-sim>
+            <div class="sim-layout">
+              <div class="sim-canvas-box">
+                <canvas data-shm-track></canvas>
+                <canvas data-shm-graph="position"></canvas>
+                <canvas data-shm-graph="velocity"></canvas>
+                <canvas data-shm-graph="acceleration"></canvas>
+              </div>
+              <div class="sim-controls">
+                <label>
+                  Amplitude
+                  <input type="range" min="0.05" max="0.6" step="0.05" value="0.3" data-shm-amplitude />
+                  <output data-shm-amplitude-out>0.30 m</output>
+                </label>
+                <label>
+                  Spring constant (k)
+                  <input type="range" min="5" max="60" step="1" value="20" data-shm-k />
+                  <output data-shm-k-out>20 N/m</output>
+                </label>
+                <label>
+                  Mass
+                  <input type="range" min="0.2" max="5" step="0.1" value="1" data-shm-mass />
+                  <output data-shm-mass-out>1.0 kg</output>
+                </label>
+                <label>
+                  Time (drag to scrub)
+                  <input type="range" min="0" max="4" step="0.02" value="0" data-shm-time />
+                  <output data-shm-time-out>0.00 s</output>
+                </label>
+                <div class="sim-buttons">
+                  <button type="button" class="btn btn-primary" data-shm-play>Play</button>
+                  <button type="button" class="btn" data-shm-reset>Reset</button>
+                </div>
+                <div class="sim-readout">
+                  <div>Period: <strong data-shm-period>–</strong></div>
+                  <div>Frequency: <strong data-shm-freq>–</strong></div>
+                  <div>Position: <strong data-shm-x>–</strong></div>
+                  <div>Velocity: <strong data-shm-v>–</strong></div>
+                  <div>Acceleration: <strong data-shm-a>–</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="placeholder-note">Notice that velocity is zero exactly when position is at its extremes, and acceleration always points back toward equilibrium (opposite in sign to position) — that's the defining signature of SHM.</p>
+
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Oscillatory Motion — Self-check quiz" data-quiz='[
+            {
+              "question": "A pendulum completes 20 full swings in 40 seconds. What is its period?",
+              "choices": ["0.5 s", "2 s", "20 s", "800 s"],
+              "correctIndex": 1,
+              "explanation": "T = time / number of cycles = 40 s / 20 = 2 s."
+            },
+            {
+              "question": "What condition defines simple harmonic motion?",
+              "choices": ["Constant acceleration", "A restoring force directly proportional to displacement and opposite in direction (F = −kx)", "Constant velocity", "A force that increases with the square of displacement"],
+              "correctIndex": 1,
+              "explanation": "SHM is defined by a restoring force proportional to displacement from equilibrium and pointing back toward it: F = −kx."
+            },
+            {
+              "question": "You double the mass on a spring, keeping the spring constant and amplitude the same. What happens to the period?",
+              "choices": ["It doubles", "It increases by a factor of √2", "It stays the same", "It is cut in half"],
+              "correctIndex": 1,
+              "explanation": "T = 2π√(m/k). Doubling m multiplies T by √2 ≈ 1.41."
+            },
+            {
+              "question": "A simple pendulum’s period depends on:",
+              "choices": ["Its length and local gravity only", "Its mass and length only", "Its mass, length, and amplitude", "Only its amplitude"],
+              "correctIndex": 0,
+              "explanation": "T = 2π√(L/g) — for small swings, the period depends only on the pendulum’s length and the local acceleration due to gravity, not on the mass of the bob or (for small angles) the amplitude."
+            }
+          ]'></div>
+
+          <h3 style="margin-bottom:0.25rem;">Waves &amp; Sound</h3>
+          <ul class="topic-list">
+            <li>Waves: Transverse &amp; Longitudinal</li>
+            <li>Sound as a Longitudinal Wave</li>
+            <li>Speed of Sound, Frequency &amp; Wavelength</li>
+            <li>Sound Intensity and Sound Level</li>
+            <li>Doppler Effect</li>
+            <li>Standing Waves in Air Columns</li>
+          </ul>
+          <div class="placeholder-note">Practice only — not connected to any gradebook. Scores reset on reload.</div>
+          <div class="quiz" data-quiz-title="Waves &amp; Sound — Self-check quiz" data-quiz='[
+            {
+              "question": "In a transverse wave, how does the medium move relative to the direction the wave travels?",
+              "choices": ["Parallel to the direction of travel", "Perpendicular to the direction of travel", "In a circle around the direction of travel", "It doesn’t move at all"],
+              "correctIndex": 1,
+              "explanation": "In a transverse wave (like a wave on a string), the medium oscillates perpendicular to the wave’s direction of travel. Sound, by contrast, is a longitudinal wave — the medium moves parallel to the direction of travel."
+            },
+            {
+              "question": "A sound wave has a frequency of 440 Hz and travels through air at 343 m/s. What is its wavelength?",
+              "choices": ["0.78 m", "1.28 m", "151,000 m", "0.0013 m"],
+              "correctIndex": 0,
+              "explanation": "v = fλ, so λ = v/f = 343 m/s ÷ 440 Hz ≈ 0.78 m."
+            },
+            {
+              "question": "An ambulance siren sounds higher-pitched as it approaches you and lower-pitched as it moves away. This is:",
+              "choices": ["The Doppler Effect", "Resonance", "Constructive interference", "The result of the siren’s volume changing"],
+              "correctIndex": 0,
+              "explanation": "The Doppler Effect shifts the observed frequency due to relative motion between source and observer — frequency rises as the source approaches and falls as it recedes, even though the siren’s actual frequency never changes."
+            },
+            {
+              "question": "For an air column closed at one end and open at the other, which harmonics are present in its standing-wave resonances?",
+              "choices": ["All harmonics (1st, 2nd, 3rd, 4th, …)", "Only even harmonics (2nd, 4th, 6th, …)", "Only odd harmonics (1st, 3rd, 5th, …)", "There are no standing-wave resonances in this configuration"],
+              "correctIndex": 2,
+              "explanation": "A tube closed at one end forces a node there and an antinode at the open end, which only fits odd multiples of a quarter-wavelength — so only odd harmonics resonate, fn = nv/4L for n = 1, 3, 5, …"
+            }
+          ]'></div>
+
+          <span class="chapter-label">Week 17 — Final Exam</span>
+          <p class="placeholder-note">Comprehensive final — Wednesday, December 9 at 10:00 AM.</p>
         </div>
       </details>
 
@@ -649,5 +1046,7 @@
 <script src="../../assets/js/projectile-sim.js"></script>
 <script src="../../assets/js/motion-1d-sim.js"></script>
 <script src="../../assets/js/force-friction-sim.js"></script>
+<script src="../../assets/js/collision-sim.js"></script>
+<script src="../../assets/js/shm-sim.js"></script>
 </body>
 </html>
