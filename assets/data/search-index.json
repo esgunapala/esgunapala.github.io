@@ -14,7 +14,7 @@
     ]
   },
   {
-    "title": "Unit 1 Introduction One-Dimensional Two-Dimensional Kinematics \u2014 Self-check quiz",
+    "title": "Introduction \u2014 Self-check quiz",
     "course": "Physics I",
     "type": "quiz",
     "url": "courses/course-1-physics/index.html#unit-1",
@@ -22,12 +22,42 @@
       "quiz",
       "practice",
       "self-check",
-      "unit",
-      "1",
       "introduction",
+      "\u2014",
+      "self-check",
+      "quiz"
+    ]
+  },
+  {
+    "title": "One-Dimensional Kinematics \u2014 Self-check quiz",
+    "course": "Physics I",
+    "type": "quiz",
+    "url": "courses/course-1-physics/index.html#unit-1",
+    "tags": [
+      "quiz",
+      "practice",
+      "self-check",
       "one-dimensional",
+      "kinematics",
+      "\u2014",
+      "self-check",
+      "quiz"
+    ]
+  },
+  {
+    "title": "Two-Dimensional Kinematics \u2014 Self-check quiz",
+    "course": "Physics I",
+    "type": "quiz",
+    "url": "courses/course-1-physics/index.html#unit-1",
+    "tags": [
+      "quiz",
+      "practice",
+      "self-check",
       "two-dimensional",
-      "kinematics"
+      "kinematics",
+      "\u2014",
+      "self-check",
+      "quiz"
     ]
   },
   {
@@ -45,6 +75,76 @@
       "torques",
       "work",
       "energy"
+    ]
+  },
+  {
+    "title": "Newton's Laws of Motion \u2014 Self-check quiz",
+    "course": "Physics I",
+    "type": "quiz",
+    "url": "courses/course-1-physics/index.html#unit-2",
+    "tags": [
+      "quiz",
+      "practice",
+      "self-check",
+      "newton's",
+      "laws",
+      "of",
+      "motion",
+      "\u2014",
+      "self-check",
+      "quiz"
+    ]
+  },
+  {
+    "title": "Friction, Drag &amp; Elasticity \u2014 Self-check quiz",
+    "course": "Physics I",
+    "type": "quiz",
+    "url": "courses/course-1-physics/index.html#unit-2",
+    "tags": [
+      "quiz",
+      "practice",
+      "self-check",
+      "friction,",
+      "drag",
+      "&amp;",
+      "elasticity",
+      "\u2014",
+      "self-check",
+      "quiz"
+    ]
+  },
+  {
+    "title": "Statics &amp; Torque \u2014 Self-check quiz",
+    "course": "Physics I",
+    "type": "quiz",
+    "url": "courses/course-1-physics/index.html#unit-2",
+    "tags": [
+      "quiz",
+      "practice",
+      "self-check",
+      "statics",
+      "&amp;",
+      "torque",
+      "\u2014",
+      "self-check",
+      "quiz"
+    ]
+  },
+  {
+    "title": "Work &amp; Energy \u2014 Self-check quiz",
+    "course": "Physics I",
+    "type": "quiz",
+    "url": "courses/course-1-physics/index.html#unit-2",
+    "tags": [
+      "quiz",
+      "practice",
+      "self-check",
+      "work",
+      "&amp;",
+      "energy",
+      "\u2014",
+      "self-check",
+      "quiz"
     ]
   },
   {
@@ -102,6 +202,40 @@
       "pdf",
       "unit",
       "1",
+      "slides",
+      "(powerpoint,",
+      "via",
+      "onedrive)"
+    ]
+  },
+  {
+    "title": "Unit 2 Guided Lecture Notes (PDF)",
+    "course": "Physics I",
+    "type": "file",
+    "url": "courses/course-1-physics/files/unit2-guided-notes.pdf",
+    "tags": [
+      "download",
+      "file",
+      "pdf",
+      "unit",
+      "2",
+      "guided",
+      "lecture",
+      "notes",
+      "(pdf)"
+    ]
+  },
+  {
+    "title": "Unit 2 Slides (PowerPoint, via OneDrive)",
+    "course": "Physics I",
+    "type": "file",
+    "url": "https://wnccnet-my.sharepoint.com/:p:/g/personal/gunapale_wncc_edu/IQBpP8pi8ruQQ5CaXv2gvooHAWBVTH_V8ma_dg5oeoz2nGE?e=Nd4ad1",
+    "tags": [
+      "download",
+      "file",
+      "pdf",
+      "unit",
+      "2",
       "slides",
       "(powerpoint,",
       "via",
